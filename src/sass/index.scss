@@ -1,5 +1,6 @@
 @import './base/common';
 @import './base/reset';
+@import './base/modal-components';
 
 @import './utils/hidden';
 @import './utils/mixins';
@@ -19,3 +20,5 @@
 
 @import './components/modal-1';
 @import './components/modal-2';
+@import './components/franchise-modal';
+@import './components/locations-modal';

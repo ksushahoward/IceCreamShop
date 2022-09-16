@@ -3,13 +3,13 @@
   align-items: center;
 }
 
-%align-justify-center {
+%justify-center {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
-%justify-center {
+%align-justify-center {
   display: flex;
+  align-items: center;
   justify-content: center;
 }

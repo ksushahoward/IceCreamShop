@@ -1,12 +1,12 @@
 @import './base/common';
 @import './base/reset';
 
-@import './components/container';
-
 @import './utils/hidden';
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './utils/vars';
+
+@import './components/container';
 
 @import './layouts/hero-header';
 @import './layouts/products';

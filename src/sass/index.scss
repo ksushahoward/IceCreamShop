@@ -1,2 +1,21 @@
-@import './common';
-@import './example';
+@import './base/common';
+@import './base/reset';
+
+@import './components/container';
+
+@import './utils/hidden';
+@import './utils/mixins';
+@import './utils/placeholders';
+@import './utils/vars';
+
+@import './layouts/hero-header';
+@import './layouts/products';
+@import './layouts/about';
+@import './layouts/advantages';
+@import './layouts/gallery';
+@import './layouts/customer-reviews.scss';
+@import './layouts/contacts';
+@import './layouts/footer';
+
+@import './components/modal-1';
+@import './components/modal-2';

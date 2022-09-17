@@ -1,6 +1,5 @@
 @import './base/common';
 @import './base/reset';
-@import './base/modal-components';
 
 @import './utils/hidden';
 @import './utils/mixins';
@@ -8,6 +7,7 @@
 @import './utils/vars';
 
 @import './components/container';
+@import './base/modal-components';
 
 @import './layouts/hero-header';
 @import './layouts/products';

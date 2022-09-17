@@ -1,12 +1,16 @@
 .franchise-modal {
   max-width: 280px;
   max-height: 674px;
+  @include tablet {
+    max-width: 568px;
+    max-height: 668px;
+  }
 }
 
-.modal__form-field:not(:nth-child(4)) {
-  margin-bottom: 12px;
-}
-
-.modal__form-field:nth-child(4) {
-  margin-bottom: 24px;
+.btn-test {
+  position: relative;
+  left: -100%;
+  transform: translateY(-100%);
+  width: 100px;
+  height: 100px;
 }

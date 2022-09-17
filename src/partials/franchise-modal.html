@@ -1,8 +1,15 @@
-<div class="backdrop">
-  <div data-franchise-modal class="franchise-modal modal">
+<div data-franchise-modal class="backdrop modal-is-hidden">
+  <div class="franchise-modal modal">
     <button data-franchise-modal-close type="button" class="modal__btn-close">
-      <svg width="16" height="16">
-        <use href="./images/icons.svg#icon-close-btn"></use>
+      <svg width="20" height="20">
+        <use
+          class="modal__icon--mobile"
+          href="./images/icons.svg#icon-close-btn-mobile"
+        ></use>
+        <use
+          class="modal__icon--desktop"
+          href="./images/icons.svg#icon-close-btn-desktop"
+        ></use>
       </svg>
     </button>
     <h3 class="modal__title">
@@ -41,13 +48,13 @@
         />
       </div>
 
-      <div class="modal__form-field">
+      <div class="modal__form-field modal__form-field--other-margin">
         <textarea class="modal__textarea" placeholder="Comment"></textarea>
       </div>
-      <div class="modal__form-field">
+      <div class="modal__form-field modal__form-field--not-margin">
         <button class="modal__btn" type="submit">Submit</button>
       </div>
     </form>
-    <button data-franchise-modal-open></button>
+    <button class="btn-test" data-franchise-modal-open>test button</button>
   </div>
 </div>

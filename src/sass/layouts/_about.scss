@@ -1,0 +1,66 @@
+.about-container {
+  background: #84a178;
+  padding-top: 60px;
+  //   padding-left: 50px;
+  //   padding-right: 50px;
+}
+.about-pre-titile_text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  @include font(700, 18px, 1.22, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 12px;
+  padding-left: 52px;
+  padding-right: 58px;
+}
+.about-titile {
+  font-family: 'Seymour One';
+  font-style: normal;
+  @include font(400, 30px, 1.26, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  margin-bottom: 32px;
+  padding-left: 56px;
+  padding-right: 64px;
+}
+.about-img_picture {
+  max-width: 279.3px;
+  border-radius: 1038.58px;
+
+  margin: 0 auto;
+}
+
+.about-pre-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.about-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  @include font(400, 12px, 1.75, 0.04em);
+  text-align: center;
+
+  color: #fcfcfc;
+}
+.about-btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  @include font(600, 14px, 1.28, 0.04em);
+  padding: 12px 34px;
+  margin: 0 auto;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 42.23px;
+
+  color: #131313;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  &_logo {
+    background-color: #131313;
+  }
+}

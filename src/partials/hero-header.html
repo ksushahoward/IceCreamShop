@@ -55,7 +55,24 @@
       </ul>
     </nav>
 
-    <button class="button header__button" type="button">Buy now</button>
+    <div class="button-box">
+      <button
+        class="mobile-menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class=""
+          width="32"
+          height="32"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use class="icon-menu" href="./images/icons.svg#icon-Burger"></use>
+        </svg>
+      </button>
+    </div>
+
+    <button class="header-button button" type="button">Buy now</button>
   </section>
 </header>
 
@@ -153,19 +170,40 @@
 <!-- ----- MOBILE MENU ------- -->
 
 <div class="menu-container js-menu-container" id="mobile-menu">
+  <a class="logo menu-container__logo" href="./index.html">
+    <picture>
+      <source
+        srcset="
+          ./images/ice-cream_logo_tablet_NN-min.png    1x,
+          ./images/ice-cream_logo_tablet_NN@2x-min.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="
+          ./images/ice-cream_logo_mobile_NN-min.png    1x,
+          ./images/ice-cream_logo_mobile_NN@2x-min.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <img src="./images/ice-cream_logo_tablet_NN-min.png " alt="logo" />
+    </picture>
+  </a>
+
   <button class="menu-toggle js-close-menu">
-    Тут буде іконка кнопки
-    <!-- <svg
+    <svg
       class="menu-toggle__cross-icon"
-      width="40"
-      height="40"
+      width="32"
+      height="32"
       aria-label="Перемикач мобільного меню"
     >
       <use
         class="icon-cross"
-        href="./images/symbol-defs-new.svg#icon-close_40px"
+        href="./images/icons.svg#icon-close-btn-mobile"
       ></use>
-    </svg> -->
+    </svg>
   </button>
 
   <ul class="mobile-nav-list list">
@@ -198,5 +236,10 @@
     </li>
   </ul>
 
-  <button class="mobile-menu-button button" type="button">Buy now</button>
+  <button
+    class="header-button menu-container__header-button button"
+    type="button"
+  >
+    Buy now
+  </button>
 </div>

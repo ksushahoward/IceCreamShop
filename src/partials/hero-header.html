@@ -1,5 +1,3 @@
-<!-- Naumenko Nikolay -->
-
 <header class="header">
   <section class="container header__container">
     <a href="./index.html">
@@ -37,7 +35,10 @@
           <a class="navigation__link link" href="./index.html">Home</a>
         </li>
         <li class="navigation__item">
-          <a class="navigation__link link" href="" class="navigation__link link"
+          <a
+            class="navigation__link link"
+            href="#made"
+            class="navigation__link link"
             >How it’s made?</a
           >
         </li>
@@ -59,7 +60,7 @@
 </header>
 
 <section class="hero">
-  <div class="container">
+  <div class="container hero__container">
     <h1 class="hero__title">ice cream made with passion</h1>
     <ul class="hero-list list">
       <ul class="hero-list__item">
@@ -74,69 +75,75 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et
     </p>
+
+    <ul class="sales-point-list">
+      <li class="sales-point-list__item">
+        <span>16</span>
+        <p class="sales-point-list__text">cafes</p>
+      </li>
+      <li class="sales-point-list__item">
+        <span>23</span>
+        <p class="sales-point-list__text">food trucks</p>
+      </li>
+    </ul>
+
+    <picture
+      ><source
+        srcset="
+          ./images/hero-plate-with-ice-cream-desktop-NN-min.png    1x,
+          ./images/hero-plate-with-ice-cream-desktop-NN@2x-min.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero-plate-with-ice-cream-tablet-NN-min.png    1x,
+          ./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png 2x
+        "
+        media="(min-width:768px)"
+      />
+      <img
+        class="hero-first-image"
+        src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"
+        alt="Plate with ice cream"
+        width="225"
+        height="225"
+      />
+    </picture>
+
+    <picture
+      ><source
+        srcset="
+          ./images/hero-ice-cream_desktop-NN-min.png    1x,
+          ./images/hero-ice-cream_desktop-NN@2x-min.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero-ice-cream_tablet-NN-min.png    1x,
+          ./images/hero-ice-cream_tablet-NN@2x-min.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero-ice-cream_mobile-NN.png    1x,
+          ./images/hero-ice-cream_mobile-NN@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <img
+        class="hero-second-image"
+        src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"
+        alt="Plate with ice cream"
+        width="484"
+        height="590"
+      />
+    </picture>
   </div>
-
-  <ul class="sales-point-list">
-    <li class="sales-point-list__item">
-      <span>16</span>
-      <p class="sales-point-list__text">cafes</p>
-    </li>
-    <li class="sales-point-list__item">
-      <span>23</span>
-      <p class="sales-point-list__text">food trucks</p>
-    </li>
-  </ul>
-
-  <picture
-    ><source
-      srcset="
-        ./images/hero-plate-with-ice-cream-desktop-NN-min.png    1x,
-        ./images/hero-plate-with-ice-cream-desktop-NN@2x-min.png 2x
-      "
-      media="(min-width:1200px)"
-    />
-    <source
-      srcset="
-        ./images/hero-plate-with-ice-cream-tablet-NN-min.png    1x,
-        ./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png 2x
-      "
-      media="(min-width:768px)"
-    />
-    <img
-      src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"
-      alt="Plate with ice cream"
-    />
-  </picture>
-
-  <picture
-    ><source
-      srcset="
-        ./images/hero-ice-cream_desktop-NN-min.png    1x,
-        ./images/hero-ice-cream_desktop-NN@2x-min.png 2x
-      "
-      media="(min-width:1200px)"
-    />
-    <source
-      srcset="
-        ./images/hero-ice-cream_tablet-NN-min.png    1x,
-        ./images/hero-ice-cream_tablet-NN@2x-min.png 2x
-      "
-      media="(min-width:768px)"
-    />
-
-    <source
-      srcset="
-        ./images/hero-ice-cream_mobile-NN-min.png    1x,
-        ./images/hero-ice-cream_mobile-NN@2x-min.png 2x
-      "
-      media="(max-width:767px)"
-    />
-
-    <img
-      src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"
-      alt="Plate with ice cream"
-    />
-  </picture>
 </section>
 
 <!-- ----- MOBILE MENU ------- -->
@@ -186,4 +193,6 @@
       >
     </li>
   </ul>
+
+  <button class="mobile-menu-button button" type="button">Buy now</button>
 </div>

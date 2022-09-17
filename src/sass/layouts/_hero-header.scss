@@ -3,6 +3,12 @@
   background-color: transparent;
 }
 
+.header__container {
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .hero__container {
   position: relative;
   height: 100%;
@@ -11,35 +17,34 @@
   padding-right: 20px;
 
   @media screen and (max-width: 767px) {
-    width: 320px;
+    max-width: 320px;
+    background-image: url(../images/Hero_points_mobile-NN-min.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
 }
 
 // .container {
 // }
-.header__container {
-  padding-top: 12px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 .navigation {
   @media screen and (max-width: 1199px) {
     display: none;
   }
 }
-.navigation__list {
-}
-.list {
-}
-.navigation__item {
-}
-.navigation__link {
-}
-.link {
-}
-.button {
-}
+// .navigation__list {
+// }
+// .list {
+// }
+// .navigation__item {
+// }
+// .navigation__link {
+// }
+// .link {
+// }
+// .button {
+// }
 
 .header__button {
   @media screen and (max-width: 1199px) {

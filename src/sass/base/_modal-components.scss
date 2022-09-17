@@ -77,6 +77,20 @@ body.modal-open {
     width: 20px;
     height: 20px;
   }
+  //========================================================== используйте это для этого тега=================================================
+  // <button  type="button" class="modal__btn-close">
+  //   <svg width="20" height="20">
+  //     <use
+  //       class="modal__icon--mobile"
+  //       href="./images/icons.svg#icon-close-btn-mobile"
+  //     ></use>
+  //     <use
+  //       class="modal__icon--desktop"
+  //       href="./images/icons.svg#icon-close-btn-desktop"
+  //     ></use>
+  //   </svg>
+  // </button>
+  //========================================================== используйте это для этого тега=================================================
 
   cursor: pointer;
   padding: 0;
@@ -200,6 +214,7 @@ body.modal-open {
   outline: none;
   color: #131313;
   border: none;
+
   .modal__form:not(:valid) & {
     background-color: #ababab;
   }
@@ -209,5 +224,15 @@ body.modal-open {
   }
   &:focus {
     color: #fcfcfc;
+  }
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__map {
+  width: 100%;
+
+  margin-bottom: 24px;
+  @include tablet {
+    margin-bottom: 32px;
   }
 }

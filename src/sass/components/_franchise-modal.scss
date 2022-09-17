@@ -1,5 +1,5 @@
 .franchise-modal {
-  max-width: 480px;
+  min-width: 480px;
   min-height: 530px;
 
   @include tablet {

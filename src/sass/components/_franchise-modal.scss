@@ -1,14 +1,12 @@
 .franchise-modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
   max-width: 280px;
   max-height: 674px;
+}
 
-  padding: 28px 30px;
-  background: #fcfcfc;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
+.modal__form-field:not(:nth-child(4)) {
+  margin-bottom: 12px;
+}
+
+.modal__form-field:nth-child(4) {
+  margin-bottom: 24px;
 }

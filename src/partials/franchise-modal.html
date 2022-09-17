@@ -1,5 +1,10 @@
 <div class="backdrop">
-  <div class="franchise-modal">
+  <div data-franchise-modal class="franchise-modal modal">
+    <button data-franchise-modal-close type="button" class="modal__btn-close">
+      <svg width="16" height="16">
+        <use href="./images/icons.svg#icon-close-btn"></use>
+      </svg>
+    </button>
     <h3 class="modal__title">
       Thank you for your interest in owning an Ice Cream shop
     </h3>
@@ -10,19 +15,39 @@
       contact information below and we will reach out for additional
       information. We appreciate your patience.
     </p>
-    <form action="">
-      <input type="text" name="username" placeholder="Name" />
-      <input type="text" name="phone" placeholder="Phome" />
-      <input type="text" name="mail" placeholder="Email" />
-      <input type="password" placeholder="Password" />
-      <textarea
-        name=""
-        id=""
-        cols="30"
-        rows="10"
-        placeholder="Comment"
-      ></textarea
-      ><button type="submit"></button>
+    <form class="modal__form" action="">
+      <div class="modal__form-field">
+        <input
+          class="modal__input"
+          type="text"
+          name="username"
+          placeholder="Name"
+        />
+      </div>
+      <div class="modal__form-field">
+        <input
+          class="modal__input"
+          type="text"
+          name="phone"
+          placeholder="Phome"
+        />
+      </div>
+      <div class="modal__form-field">
+        <input
+          class="modal__input"
+          type="text"
+          name="mail"
+          placeholder="Email"
+        />
+      </div>
+
+      <div class="modal__form-field">
+        <textarea class="modal__textarea" placeholder="Comment"></textarea>
+      </div>
+      <div class="modal__form-field">
+        <button class="modal__btn" type="submit">Submit</button>
+      </div>
     </form>
+    <button data-franchise-modal-open></button>
   </div>
 </div>

@@ -7,6 +7,11 @@
   padding-top: 12px;
   padding-left: 20px;
   padding-right: 20px;
+
+  @include tablet {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
 
 .hero__container {
@@ -19,6 +24,18 @@
   @media screen and (max-width: 767px) {
     max-width: 320px;
     background-image: url(../images/Hero_points_mobile-NN-min.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @include retina {
+      background-image: url(../images/Hero_points_mobile-NN@2x-min.png);
+    }
+  }
+
+  @include tablet {
+    width: 768px;
+    background-image: url(../images/Hero_points_tablet-NN-min.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
@@ -55,6 +72,10 @@
 .hero {
   height: 502px;
   background-color: #84a178;
+
+  @include tablet {
+    height: 415px;
+  }
 }
 
 .hero__title {
@@ -120,11 +141,16 @@
 }
 
 .hero-second-image {
-  max-width: 170px;
+  width: 170px;
 
   position: absolute;
   left: 82px;
   bottom: 0;
+
+  @include tablet {
+    width: 257px;
+    left: 418px;
+  }
 
   & {
     filter: drop-shadow(0px 0px 50px rgba(252, 252, 252, 0.44));

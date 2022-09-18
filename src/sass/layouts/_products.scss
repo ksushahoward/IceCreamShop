@@ -27,6 +27,10 @@
     gap: 56px;
 }
 
+.products-list__item {
+    width: 100%;
+}
+
 .products-list__title {
     @include font(700, 20px, 1.2, 0.04em);
     text-transform: uppercase;

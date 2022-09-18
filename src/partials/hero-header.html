@@ -55,7 +55,24 @@
       </ul>
     </nav>
 
-    <button class="button header__button" type="button">Buy now</button>
+    <div class="button-box">
+      <button
+        class="mobile-menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="icon-menu"
+          width="32"
+          height="32"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="./images/icons.svg#icon-Burger"></use>
+        </svg>
+      </button>
+    </div>
+
+    <button class="header-button button" type="button">Buy now</button>
   </section>
 </header>
 
@@ -63,7 +80,10 @@
   <div class="container hero__container">
     <div class="hero-box">
       <div class="hero-box-left-part">
-        <h1 class="hero__title">ice cream made with passion</h1>
+        <h1 class="hero__title">
+          ice cream made with
+          <span class="hero__title--big-word"> passion</span>
+        </h1>
         <ul class="hero-list list">
           <ul class="hero-list__item">
             <a href="" class="hero-list__link link">Products</a>
@@ -86,10 +106,36 @@
       </ul>
     </div>
 
-    <p class="hero-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-    </p>
+    <div class="text-arrow-wrapper">
+      <p class="hero-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <a href="" class="arrow-link link">
+        <svg
+          class="arrow-link__icon arrow-link__icon--default"
+          width="40"
+          height="16"
+        >
+          <use href="./images/icons.svg#icon-arrow-default"></use>
+        </svg>
+        <svg
+          class="arrow-link__icon arrow-link__icon--hover"
+          width="50"
+          height="16"
+        >
+          <use href="./images/icons.svg#icon-arrow-hover"></use>
+        </svg>
+        <svg
+          class="arrow-link__icon arrow-link__icon--focus"
+          width="50"
+          height="23"
+        >
+          <use href="./images/icons.svg#icon-arrow-focus"></use>
+        </svg>
+      </a>
+    </div>
 
     <picture
       ><source
@@ -99,6 +145,7 @@
         "
         media="(min-width:1200px)"
       />
+
       <source
         srcset="
           ./images/hero-plate-with-ice-cream-tablet-NN-min.png    1x,
@@ -106,6 +153,7 @@
         "
         media="(min-width:768px)"
       />
+
       <img
         class="hero-first-image"
         src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"
@@ -153,19 +201,40 @@
 <!-- ----- MOBILE MENU ------- -->
 
 <div class="menu-container js-menu-container" id="mobile-menu">
+  <a class="logo menu-container__logo" href="./index.html">
+    <picture>
+      <source
+        srcset="
+          ./images/ice-cream_logo_tablet_NN-min.png    1x,
+          ./images/ice-cream_logo_tablet_NN@2x-min.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="
+          ./images/ice-cream_logo_mobile_NN-min.png    1x,
+          ./images/ice-cream_logo_mobile_NN@2x-min.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <img src="./images/ice-cream_logo_tablet_NN-min.png " alt="logo" />
+    </picture>
+  </a>
+
   <button class="menu-toggle js-close-menu">
-    Тут буде іконка кнопки
-    <!-- <svg
+    <svg
       class="menu-toggle__cross-icon"
-      width="40"
-      height="40"
+      width="32"
+      height="32"
       aria-label="Перемикач мобільного меню"
     >
       <use
         class="icon-cross"
-        href="./images/symbol-defs-new.svg#icon-close_40px"
+        href="./images/icons.svg#icon-close-btn-mobile"
       ></use>
-    </svg> -->
+    </svg>
   </button>
 
   <ul class="mobile-nav-list list">
@@ -198,5 +267,10 @@
     </li>
   </ul>
 
-  <button class="mobile-menu-button button" type="button">Buy now</button>
+  <button
+    class="header-button menu-container__header-button button"
+    type="button"
+  >
+    Buy now
+  </button>
 </div>

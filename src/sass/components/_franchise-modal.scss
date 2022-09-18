@@ -1,9 +1,8 @@
 .franchise-modal {
-  max-width: 280px;
-  max-height: 674px;
+  max-width: 530px;
   @include tablet {
     max-width: 568px;
-    max-height: 668px;
+    height: 668px;
   }
 }
 

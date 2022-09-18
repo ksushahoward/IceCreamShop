@@ -1,0 +1,321 @@
+.header {
+  position: absolute;
+
+  z-index: 1;
+  background-color: transparent;
+}
+
+.logo {
+  margin-right: 269px;
+}
+
+.header__container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include tablet {
+    display: flex;
+    align-items: center;
+
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100vw;
+    justify-content: center;
+  }
+}
+
+.header__button {
+  display: block;
+  width: 152px;
+
+  margin-left: auto;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  background: #f8d24e;
+  border: none;
+  border-radius: 10px;
+
+  font-family: 'Montserrat';
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: #131313;
+}
+
+.hero__container {
+  position: relative;
+  height: 100%;
+  padding-top: 110px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 320px;
+    background-image: url(../images/Hero_points_mobile-NN-min.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    @include retina {
+      background-image: url(../images/Hero_points_mobile-NN@2x-min.png);
+    }
+  }
+
+  @include tablet {
+    width: 768px;
+
+    padding-top: 104px;
+    background-image: url(../images/Hero_points_tablet-NN-min.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  @include desktop {
+    width: 1200px;
+    padding-top: 118px;
+    background-image: url(../images/Hero_points_desktop-NN-min.png);
+  }
+}
+
+// .container {
+// }
+
+.navigation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
+  &__list {
+    @include desktop {
+      display: flex;
+      gap: 27px;
+    }
+  }
+
+  &__link {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    font-family: 'Montserrat';
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.25;
+
+    color: #fcfcfc;
+  }
+}
+
+.header__button {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.hero {
+  height: 502px;
+  background-color: #84a178;
+
+  @include tablet {
+    height: 415px;
+  }
+
+  @include desktop {
+    height: 664px;
+  }
+}
+
+.hero-box {
+  display: flex;
+  margin-bottom: 109px;
+}
+
+.sales-point-list {
+  margin-left: auto;
+}
+
+.hero__title {
+  width: 247px;
+
+  margin-bottom: 32px;
+
+  font-family: 'Seymour One';
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+
+  @include desktop {
+    margin-bottom: 28px;
+    width: 367px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.hero-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+
+  @include desktop {
+    gap: 34px;
+  }
+}
+
+.hero-list__link {
+  @extend %align-justify-center;
+}
+
+.hero-list__item {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1.25;
+
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  &:first-child .hero-list__link {
+    width: 62px;
+    height: 24px;
+
+    border: 2px solid #f8d24e;
+    border-radius: 8px;
+
+    color: #131313;
+
+    @include desktop {
+      width: 134px;
+      height: 42px;
+
+      border: 2px solid #f8d24e;
+      border-radius: 10px;
+
+      color: #131313;
+    }
+  }
+
+  &:last-child .hero-list__link {
+    width: 83px;
+    height: 24px;
+
+    text-decoration: underline;
+
+    color: #f8d24e;
+
+    @include desktop {
+      width: 111px;
+      height: 42px;
+    }
+  }
+}
+
+.hero-text {
+  width: 200px;
+  margin-left: 240px;
+
+  font-family: 'Montserrat';
+
+  font-size: 14px;
+  line-height: 1.4;
+  color: #fcfcfc;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.hero-first-image {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  position: absolute;
+  left: 17px;
+  bottom: 65px;
+}
+
+.hero-second-image {
+  width: 170px;
+
+  position: absolute;
+  left: 82px;
+  bottom: 0;
+
+  @include tablet {
+    width: 257px;
+    left: 418px;
+  }
+
+  @include desktop {
+    width: 484px;
+    left: 651px;
+  }
+
+  & {
+    filter: drop-shadow(0px 0px 50px rgba(252, 252, 252, 0.44));
+    // transition-property: filter;
+    // transition-duration: 250ms;
+    // transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  }
+}
+
+.sales-point-list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.sales-point-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 16px;
+
+  span {
+    font-family: 'Montserrat';
+    font-weight: 900;
+    letter-spacing: 0.04em;
+    text-align: right;
+    margin-bottom: 4px;
+
+    @include tablet {
+      font-size: 28px;
+      line-height: 1.21;
+
+      text-transform: uppercase;
+
+      color: #131313;
+    }
+
+    @include desktop {
+      font-size: 46px;
+      line-height: 1.22;
+    }
+  }
+}
+
+.sales-point-list__text {
+  font-family: 'Montserrat';
+
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: #fcfcfc;
+}

@@ -62,12 +62,12 @@
         aria-controls="mobile-menu"
       >
         <svg
-          class=""
+          class="icon-menu"
           width="32"
           height="32"
           aria-label="Перемикач мобільного меню"
         >
-          <use class="icon-menu" href="./images/icons.svg#icon-Burger"></use>
+          <use href="./images/icons.svg#icon-Burger"></use>
         </svg>
       </button>
     </div>
@@ -80,7 +80,10 @@
   <div class="container hero__container">
     <div class="hero-box">
       <div class="hero-box-left-part">
-        <h1 class="hero__title">ice cream made with passion</h1>
+        <h1 class="hero__title">
+          ice cream made with
+          <span class="hero__title--big-word"> passion</span>
+        </h1>
         <ul class="hero-list list">
           <ul class="hero-list__item">
             <a href="" class="hero-list__link link">Products</a>
@@ -103,10 +106,36 @@
       </ul>
     </div>
 
-    <p class="hero-text">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-    </p>
+    <div class="text-arrow-wrapper">
+      <p class="hero-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <a href="" class="arrow-link link">
+        <svg
+          class="arrow-link__icon arrow-link__icon--default"
+          width="40"
+          height="16"
+        >
+          <use href="./images/icons.svg#icon-arrow-default"></use>
+        </svg>
+        <svg
+          class="arrow-link__icon arrow-link__icon--hover"
+          width="50"
+          height="16"
+        >
+          <use href="./images/icons.svg#icon-arrow-hover"></use>
+        </svg>
+        <svg
+          class="arrow-link__icon arrow-link__icon--focus"
+          width="50"
+          height="23"
+        >
+          <use href="./images/icons.svg#icon-arrow-focus"></use>
+        </svg>
+      </a>
+    </div>
 
     <picture
       ><source
@@ -116,6 +145,7 @@
         "
         media="(min-width:1200px)"
       />
+
       <source
         srcset="
           ./images/hero-plate-with-ice-cream-tablet-NN-min.png    1x,
@@ -123,6 +153,7 @@
         "
         media="(min-width:768px)"
       />
+
       <img
         class="hero-first-image"
         src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"

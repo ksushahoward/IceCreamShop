@@ -137,3 +137,18 @@ margin-bottom: 32px;
         background-color: #84A178;
        
       }
+
+      .glide-arrow-pos{
+        background-color: transparent;
+        border: none;
+        color: black;
+       font-size: 40px;
+       
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .glide-arrow-pos:hover,.glide-arrow-pos:focus{
+        color: green; 
+      }

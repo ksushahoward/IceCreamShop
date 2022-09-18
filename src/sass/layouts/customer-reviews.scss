@@ -1,5 +1,5 @@
-.cust-rev-image{
-    background-image: url(/src/images/cust-rev-image.jpg);
+.cust-rev-image1{
+    background-image: url(/src/images/cust-rev-image1.jpg);
     width: 85px;
     height: 85px;
     display: flex;
@@ -10,6 +10,48 @@
   margin-top: 452px;
   margin-bottom: 32px;
   @extend %align-justify-center
+}
+
+.cust-rev-image2{
+  background-image: url(/src/images/cust-rev-image2.jpg);
+  width: 85px;
+  height: 85px;
+  display: flex;
+  border-radius: 50%;
+
+
+
+margin-top: 452px;
+margin-bottom: 32px;
+@extend %align-justify-center
+}
+
+.cust-rev-image3{
+  background-image: url(/src/images/cust-rev-image3.jpg);
+  width: 85px;
+  height: 85px;
+  display: flex;
+  border-radius: 50%;
+
+
+
+margin-top: 452px;
+margin-bottom: 32px;
+@extend %align-justify-center
+}
+
+.cust-rev-image4{
+  background-image: url(/src/images/cust-rev-image4.jpg);
+  width: 85px;
+  height: 85px;
+  display: flex;
+  border-radius: 50%;
+
+
+
+margin-top: 452px;
+margin-bottom: 32px;
+@extend %align-justify-center
 }
 
 .cust-rev{
@@ -59,6 +101,7 @@ margin-bottom: 32px;
     list-style: none;
     margin: 0;
     padding-left: 0;
+    text-decoration: none;
   }
   
 

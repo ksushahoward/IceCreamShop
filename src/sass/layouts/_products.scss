@@ -1,0 +1,40 @@
+.products {
+    padding: 60px 20px;
+    display: block;
+    text-align: center;
+}
+
+.products__paragraph {
+    @include font (800, 18px, 1.22, none);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.products__title {
+    @include font(400, 30px, 1.26, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 40;
+    color: #131313;
+}
+
+.products-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 56px;
+}
+
+.products-list__title {
+    @include font(700, 20px, 1.2, 0.04em);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #131313;
+}
+
+.products-list__text {
+    @include font(400, 14px, 1.76, 0.04em);
+    color: #131313;
+}

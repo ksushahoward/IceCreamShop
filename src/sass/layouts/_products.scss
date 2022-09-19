@@ -6,6 +6,13 @@
 
 .products__paragraph {
     @include font (800, 18px, 1.22, none);
+    @include laptop {
+        font-size: 22px;
+    }
+    @include desktop {
+        font-size: 30px;
+        line-height: 1.23;
+    }
     justify-content: center;
     text-transform: uppercase;
     margin-bottom: 12px;
@@ -13,6 +20,15 @@
 
 .products__title {
     @include font(400, 30px, 1.26, 0.04em);
+    @include laptop {
+        font-size: 34px;
+        margin-bottom: 80px;
+    }
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 120px;
+    }
     justify-content: center;
     text-transform: uppercase;
     margin-bottom: 40;
@@ -29,6 +45,13 @@
 
 .products-list__item {
     width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 32px)/3);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 64px)/3);
+    }
 }
 
 .products-list__title {

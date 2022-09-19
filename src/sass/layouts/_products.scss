@@ -105,15 +105,15 @@
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     }
 }
-.products-list__box:first-child {
+.products-list__box--color-green {
   background-color: #AEC6A5;
 }
 
-.products-list__box:nth-child(2) {
+.products-list__box--color-yellow {
     background-color: #EFD478;
 }
 
-.products-list__box:last-child {
+.products-list__box--color-brown {
     background-color: #D6936D;
 }
 

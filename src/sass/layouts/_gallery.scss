@@ -1,27 +1,8 @@
-.gallery {
-  width: 280px;
-  height: auto;
-  margin: 0;
-  @include mobile {
-    width: 440px;
-  }
-  @include tablet {
-    width: 704px;
-  }
-  @include desktop {
-    width: 1013px;
-  }
-}
-
-.gallery-thumb {
+.gallery__thumb {
   position: absolute;
   background-color: #ffffff;
-<<<<<<< Updated upstream
   width: 280px;
-=======
-  width: 281px;
   height: 130px;
->>>>>>> Stashed changes
   top: -16px;
   margin-left: auto;
   margin-right: auto;

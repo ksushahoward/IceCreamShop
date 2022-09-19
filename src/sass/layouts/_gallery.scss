@@ -11,24 +11,29 @@
   }
 }
 .gallery__thumb {
-  width: 100%;
+  position: relative;
+  top: -28px;
+  width: 280px;
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
   border-radius: 7px;
   object-fit: fill;
+  overflow: hidden;
+
   @include mobile {
     width: 440px;
-    margin-left: 20px;
-    margin-right: 20px;
+    top: -28px;
   }
   @include tablet {
     width: 768px;
-    border-radius: 18px;
+    top: -50px;
+    /*border-radius: 18px;*/
   }
   @include desktop {
     width: 1013px;
-    border-radius: 24px;
+    top: -92px;
+    /*border-radius: 24px;*/
   }
 }
 

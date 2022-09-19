@@ -18,7 +18,6 @@
   padding-left: 20px;
   padding-right: 20px;
 
-  // outline: 1px solid tomato;
   @include tablet {
     padding-left: 32px;
     padding-right: 32px;
@@ -203,6 +202,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   min-width: 196px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -245,12 +245,18 @@
   &:hover {
     background-color: var(--bgc-dark-olive);
     border: 2px solid var(--hover-focus-green-color);
+    //.contacts-button-arrow {
+    //fill: currentColor;
+    // }
   }
 
   &:focus {
     background-color: var(--bgc-dark-olive);
     color: var(--text-color-light);
   }
+}
+.contacts-button-arrow {
+  fill: currentColor;
 }
 
 .contacts__lable {

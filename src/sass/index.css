@@ -86,6 +86,7 @@ img {
 
 .gallery__thumb {
   position: relative;
+  background-color: #ffffff;
   width: 280px;
   top: -16px;
   margin-left: auto;

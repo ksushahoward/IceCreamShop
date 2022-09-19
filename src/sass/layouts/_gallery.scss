@@ -1,5 +1,5 @@
-.gallery-thumb {
-  position: relative;
+.gallery__thumb {
+  position: absolute;
   background-color: #ffffff;
   width: 280px;
   height: 130px;
@@ -10,7 +10,7 @@
   border-radius: 7px;
   overflow: hidden;
   border: none;
-  z-index: 2;
+  z-index: 1;
   @include mobile {
     width: 440px;
     height: auto;

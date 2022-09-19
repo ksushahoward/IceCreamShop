@@ -38,7 +38,10 @@
     display: none;
   }
 
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
   width: 152px;
 
   padding-top: 12px;
@@ -67,6 +70,9 @@
   &:focus {
     color: #fcfcfc;
     background-color: #0a8817;
+    .header-button-arrow {
+      stroke: #fcfcfc;
+    }
   }
 }
 

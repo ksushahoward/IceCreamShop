@@ -2,17 +2,50 @@
     padding: 60px 20px;
     display: block;
     text-align: center;
+    background-image: linear-gradient(rgba(25,28,38,0.2),rgba(25, 28, 38, 0.2), url(../images/ice-cream-back.jpg));
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include tablet {
+        padding-bottom: 82px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    
+    @include desktop {
+        padding-bottom: 60px;
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 .products__paragraph {
+    font-family: 'Montserrat';
     @include font (800, 18px, 1.22, none);
+    @include tablet {
+        font-size: 22px;
+    }
+    @include desktop {
+        font-size: 30px;
+        line-height: 1.23;
+    }
     justify-content: center;
     text-transform: uppercase;
     margin-bottom: 12px;
 }
 
 .products__title {
+    font-family: 'Seymour One';
     @include font(400, 30px, 1.26, 0.04em);
+    @include tablet {
+        font-size: 34px;
+        margin-bottom: 80px;
+    }
+    @include desktop {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 120px;
+    }
     justify-content: center;
     text-transform: uppercase;
     margin-bottom: 40;
@@ -25,20 +58,47 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 56px;
+    @include tablet {
+        gap:16px;
+    }
+    @include desktop {
+        gap:32px;
+    }
 }
 
 .products-list__item {
     width: 100%;
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 32px)/3);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 64px)/3);
+    }
 }
 
 .products-list__title {
+    font-family: 'Montserrat';
     @include font(700, 20px, 1.2, 0.04em);
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #131313;
+    @include tablet {
+       font-size: 22px;
+       letter-spacing: 1.22;
+    }
+    @include desktop {
+        font-size: 30px;
+        line-height: 1.23;
+        margin-bottom: 65px;
+    }
 }
 
 .products-list__text {
+    font-family: 'Montserrat';
     @include font(400, 14px, 1.76, 0.04em);
+    @include desktop {
+        font-size: 16px;
+    }
     color: #131313;
 }

@@ -1,3 +1,49 @@
-<!--<setion class="gallery">
-</setion>
--->
+<section class="gallery-section">
+    <div class="gallery-thumb">
+                <picture class="gallery-thumb__picture">
+                    <source
+                    srcset="
+                        ./images/gallery/main-gallery-desktop.jpg    1x,
+                        ./images/gallery/main-gallery-desktop-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                    />
+                    <source
+                    srcset="
+                        ./images/gallery/main-gallery-tablet.jpg    1x,
+                        ./images/gallery/main-gallery-tablet-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                    />
+                    <source
+                    srcset="
+                        ./images/gallery/main-gallery-mobile.jpg    1x,
+                        ./images/gallery/main-gallery-mobile-2x.jpg 2x
+                    "
+                    media="(max-width:767px)"
+                    />
+                    <img
+                        src="./images/gallery/main-gallery-desktop.jpg"
+                        alt="Main Gallery Icecream"
+                        class="gallery-thumb__image"
+                        width="1013"
+                    />
+                </picture>
+                <picture class="gallery-thumb__picture">
+                    <source 
+                        srcset="./images/gallery/gallery-item1-desktop.jpg 1x, ./images/gallery/gallery-item1-desktop-2x.jpg 2x"
+                        src="./images/gallery/gallery-item1-desktop.jpg">
+                    <img 
+                        src="./images/gallery/gallery-item1-desktop.jpg" alt="Second Gallery IceCream" width="1013"
+                        class="gallery-thumb__image">
+                </picture>
+                <picture class="gallery-thumb__picture">
+                    <source 
+                        srcset="./images/gallery/gallery-item2-desktop.jpg 1x, ./images/gallery/gallery-item2-desktop-2x.jpg 2x"
+                        src="./images/gallery/gallery-item1-desktop.jpg">
+                    <img 
+                        src="./images/gallery/gallery-item1-desktop.jpg" alt="Second Gallery IceCream" width="1013"
+                        class="gallery-thumb__image">
+                </picture>
+    </div>
+</section>

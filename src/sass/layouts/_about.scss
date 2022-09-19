@@ -170,7 +170,9 @@
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 42.23px;
-
+  transition: background-color, color, fill;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     margin: 0;
     margin-top: 48px;

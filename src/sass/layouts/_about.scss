@@ -55,12 +55,16 @@
 // ------------------------------------
 .about-img__picture {
   width: 100%;
+  border: 1px solid #000000;
   border-radius: 50%;
   z-index: 2;
+  @include tablet {
+    border: none;
+  }
 }
-.cow-thumb {
-  position: relative;
-}
+// .cow-thumb {
+//   position: relative;
+// }
 .cow-thumb {
   z-index: 3;
   position: relative;
@@ -71,10 +75,9 @@
     height: 334px;
   }
   @include desktop {
-    width: 490px;
-    height: 490px;
+    width: 500px;
+    height: 500px;
   }
-
   border-radius: 50%;
 }
 
@@ -83,17 +86,17 @@
   display: inline-block;
   width: 279px;
   height: 279px;
-  bottom: 21px;
+  bottom: 22px;
   @include tablet {
-    width: 334px;
-    height: 334px;
-    bottom: 28px;
+    width: 336px;
+    height: 336px;
+    bottom: 26px;
   }
   @include desktop {
-    bottom: 39px;
+    bottom: 29px;
 
-    width: 490px;
-    height: 490px;
+    width: 500px;
+    height: 500px;
   }
   background-image: linear-gradient(
     to right,

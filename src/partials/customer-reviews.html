@@ -42,6 +42,121 @@
 <div class="glide__arrows" data-glide-el="controls">
     <button class="glide__arrow glide-arrow-pos glide__arrow--left" data-glide-dir="<"><</button>
     <button class="glide__arrow glide-arrow-pos glide__arrow--right" data-glide-dir=">">></button>
+
+  <div class="container">
+    <div class="gallery-thumb">
+      <picture class="gallery-thumb__picture">
+        <source
+          srcset="
+            ./images/gallery/main-gallery-desktop.jpg    1x,
+            ./images/gallery/main-gallery-desktop-2x.jpg 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/main-gallery-tablet.jpg    1x,
+            ./images/gallery/main-gallery-tablet-2x.jpg 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/gallery/main-gallery-mobile.jpg    1x,
+            ./images/gallery/main-gallery-mobile-2x.jpg 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="./images/gallery/main-gallery-desktop.jpg"
+          alt="Main Gallery Icecream"
+          class="gallery__main-image"
+          width="1013"
+        />
+      </picture>
+      <ul class="secondary-image-list">
+        <li class="secondary-image__item">
+          <img
+            srcset="
+              ./images/gallery/gallery-item1-desktop.jpg    1x,
+              ./images/gallery/gallery-item1-desktop-2x.jpg 2x
+            "
+            src="./images/gallery/gallery-item1-desktop.jpg"
+            alt="Second Gallery IceCream"
+            width="1013"
+            class="gallery__image"
+          />
+        </li>
+        <li class="secondary-image__item">
+          <img
+            srcset="
+              ./images/gallery/gallery-item2-desktop.jpg    1x,
+              ./images/gallery/gallery-item2-desktop-2x.jpg 2x
+            "
+            src="./images/gallery/gallery-item2-desktop.jpg"
+            alt="Third Gallery IceCream"
+            width="1013"
+            class="gallery__image"
+          />
+        </li>
+      </ul>
+    </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide ">   <div class="cust-rev-center"><span class="cust-rev-image1"> </span></div>
+
+            
+          
+          <p class="cust-rev-font cust-rev-font-back cust-rev-font-white">
+            I love visiting your cafe. You prepare the most delicious ice
+            cream in Los Angeles! In addition, you have beautiful serving,
+            cozy atmosphere and polite staff.
+          </p>
+          <p class="cust-rev-font cust-rev-font-black">
+            Emily, Los Angeles
+          </p>
+        </div>
+        
+          <div class="swiper-slide ">
+            <div class="cust-rev-center">
+              <span class="cust-rev-image2"> </span>
+            </div>
+           
+          
+          <p class="cust-rev-font cust-rev-font-back cust-rev-font-white">
+            Every day we come to you with friends after classes in college.
+            We love your ice cream and casual atmosphere!
+          </p>
+          <p class="cust-rev-font cust-rev-font-black">Bryan, New-York</p>
+        </div>
+          <div class="swiper-slide ">
+            <div class="cust-rev-center">
+              <span class="cust-rev-image3"> </span>
+            </div>  
+            
+          
+          <p class="cust-rev-font cust-rev-font-back cust-rev-font-white">
+            Ice cream is my passion! I love your chocolate hazelnut ice
+            cream! And I really like the excellent service - always served
+            politely and quickly!
+          </p>
+          <p class="cust-rev-font cust-rev-font-black">Diana, Chicago</p>
+       </div>
+          <div class="swiper-slide ">
+            <div class="cust-rev-center">
+               <span class="cust-rev-image4"> </span>
+            </div>   
+           
+          
+          <p class="cust-rev-font cust-rev-font-back cust-rev-font-white">
+            I love eating popsicles on a hot day. Yours is always delicious.
+            I recommend your cafe to everyone I know.
+          </p>
+          <p class="cust-rev-font cust-rev-font-black">Sam, Los Angeles</p>
+        </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
   </div>
 
 </div>

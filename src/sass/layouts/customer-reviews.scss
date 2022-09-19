@@ -91,10 +91,42 @@ margin-bottom: 32px;
     border-radius: 24px;
 }
 
+
 .cust-rev-center{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.swiper {
+  width: 1200px;
+
+}
+
+.swiper-pagination{
+margin-top: 32px;
+margin-bottom: 207px;
+position:relative;
+}
+.swiper-pagination-bullet{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  color: #d9d9d9;
+  
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.swiper-pagination-bullet-active{
+  background: #84a178;
+}
+
+.cust-rev-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .cust-rev-list {
@@ -113,6 +145,7 @@ margin-bottom: 32px;
     padding-bottom: 200px;
     
 }
+
 
 
     .cust-rev-swipe {
@@ -154,3 +187,28 @@ margin-bottom: 32px;
         color: green; 
       }
       
+
+
+
+.cust-rev-swipe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  color: #d9d9d9;
+  background-color: #d9d9d9;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cust-rev-swipe:hover {
+  color: #d9d9d9;
+  background-color: #84a178;
+}
+
+.cust-rev-swipe:focus {
+  color: #d9d9d9;
+  background-color: #84a178;
+}

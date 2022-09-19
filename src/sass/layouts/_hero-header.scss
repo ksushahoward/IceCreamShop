@@ -84,7 +84,7 @@
   padding-right: 20px;
 
   @media screen and (max-width: 767px) {
-    max-width: 320px;
+    max-width: 480px;
     background-image: url(../images/Hero_points_mobile-NN-min.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -396,6 +396,10 @@
   left: 82px;
   bottom: 0;
 
+  @media screen and (min-width: 321px) and (max-width: 767px) {
+    left: 29%;
+  }
+
   filter: drop-shadow(0px 0px 27px rgba(252, 252, 252, 0.44));
 
   transition-property: all;
@@ -549,7 +553,7 @@
   background-color: #97af8d;
   z-index: 999;
 
-  transform: translateX(100%);
+  transform: translateX(103%);
   transition: transform 250ms ease-in-out;
 
   overflow-y: scroll;

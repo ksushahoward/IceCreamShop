@@ -33,6 +33,10 @@
   }
 }
 
+.header-button__arrow {
+  fill: currentColor;
+}
+
 .header-button {
   @media screen and (max-width: 767px) {
     display: none;
@@ -61,7 +65,7 @@
 
   transition-property: all;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
     background-color: #0a8817;
@@ -70,9 +74,6 @@
   &:focus {
     color: #fcfcfc;
     background-color: #0a8817;
-    .header-button-arrow {
-      stroke: #fcfcfc;
-    }
   }
 }
 
@@ -139,7 +140,7 @@
 
     transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__link:hover,
@@ -255,7 +256,7 @@
 
     transition-property: all;
     transition-duration: 250ms;
-    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @include desktop {
       width: 134px;
@@ -288,7 +289,7 @@
 
     transition-property: all;
     transition-duration: 250ms;
-    transition-timing-function: linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @include desktop {
       width: 111px;
@@ -326,6 +327,7 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
   display: flex;
   flex-direction: column;
   margin-left: 197px;
@@ -404,7 +406,7 @@
 
   transition-property: all;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
     width: 257px;
@@ -636,13 +638,18 @@
 }
 
 .menu-container__header-button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  width: 152px;
+
   margin-left: auto;
   margin-right: auto;
 
   transition-property: all;
   transition-duration: 250ms;
-  transition-timing-function: linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   @include tablet {
     display: none;

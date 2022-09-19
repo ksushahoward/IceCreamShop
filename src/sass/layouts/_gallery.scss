@@ -1,5 +1,5 @@
 .gallery-thumb {
-  position: absolute;
+  position: relative;
   background-color: #ffffff;
   width: 280px;
   height: 130px;
@@ -30,7 +30,6 @@
 }
 }
 
-.gallery-thumb__picture {position: absolute;}
 .secondary-image-list {position: absolute;}
 .secondary-image__item {position: absolute; 
   top: 0;

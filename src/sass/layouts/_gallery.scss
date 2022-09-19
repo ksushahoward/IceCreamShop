@@ -1,39 +1,107 @@
 .gallery {
-  width: 100%;
+  width: 280px;
+  height: auto;
+  margin: 0;
   @include mobile {
-    width: 480px;
+    width: 440px;
   }
   @include tablet {
-    width: 768px;
+    width: 704px;
   }
   @include desktop {
-    width: 1200px;
+    width: 1013px;
   }
 }
 .gallery__thumb {
-  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  width: 280px;
+  top: -16px;
   margin-left: auto;
   margin-right: auto;
   overflow: auto;
   border-radius: 7px;
-  object-fit: fill;
+  overflow: hidden;
+  border: none;
   @include mobile {
     width: 440px;
-    margin-left: 20px;
-    margin-right: 20px;
+    top: -22px;
   }
   @include tablet {
-    width: 768px;
-    border-radius: 18px;
-  }
+    width: 704px;
+    top: -50px;
+    border-radius: 18px;}
+  
   @include desktop {
     width: 1013px;
+    top: -92px;
     border-radius: 24px;
-  }
+}
 }
 
-.gallery__main-image {
-  display: block;
-  max-width: 100%;
-  height: auto;
+.main-gallery-container__picture {position: relative;}
+.secondary-image-list {position: absolute;}
+.secondary-image__item {position: absolute; 
+  top: 0;
+  left: 0;
+  & img {width: 280px; 
+    object-fit: cover;
+    animation-name: rotate;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation-iteration-count: infinite;
+    animation-duration: 20s;
+    animation-direction: normal;
+    @include mobile {width: 440px;}
+    @include tablet {width: 704px;}
+    @include desktop {width: 1013px;}}
+  }
+.main-gallery-container__picture > img {animation-name: rotate;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-iteration-count: infinite;
+  animation-duration: 20s;
+  animation-direction: normal;
+  animation-delay: 5s;}
+.secondary-image__item:nth-child(1) img {
+  animation-delay: 10s;
 }
+
+.secondary-image__item:nth-child(2) img {
+  animation-delay: 0s;
+}
+@keyframes gallery {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  33% {
+    opacity: 0;
+  }
+  92% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes rotate {
+  0% {
+      opacity: 1;
+      transform: rotate(0) scale(1);
+    }
+  50% {
+      transform: rotate(0) scale(1);
+      opacity: 1;
+    } 
+  59.99999% {
+      transform: rotate(45deg) scale(3);
+      opacity: 0;
+    }
+  60% {
+      opacity: 0;
+    }  
+  100% {
+      opacity: 1;
+    }  
+  }

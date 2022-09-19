@@ -4,7 +4,8 @@
     <h1 class="products__title link">products</h1>
     <ul class="products-list list">
       <li class="products-list__item">
-        <picture>
+        <div class="products-list__thumb">
+          <picture>
           <source 
             srcset="
               ./images/products/ice-cream-des.jpg 1x,
@@ -28,68 +29,79 @@
           />
           <img class="products-list__photo" src="./images/products/ice-cream-des.jpg" alt="ice cream">
         </picture>
-        <h2 class="products-list__title">ice cream</h2>
-        <p class="products-list__text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
-        stabilizer</p>
+        </div>
+        <div class="products-list__box">
+          <h2 class="products-list__title">ice cream</h2>
+          <p class="products-list__text">Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural
+          stabilizer</p>
+        </div>
       </li>
-      <li class="products-item">
-        <picture>
-          <source 
-            srcset="
-              ./images/products/ice-coffee-des.jpg 1x,
-              ./images/products/ice-coffee-des-2.jpg 2x
-            " 
-            media="(min-width:1200px)" 
-          />
-          <source 
-            srcset="
-              ./images/products/ice-coffee-tab.jpg 1x,
-              ./images/products/ice-coffee-tab-2.jpg 2x
-            " 
-            media="(min-width:768)" 
-          />
-          <source 
-            srcset="
-              ./images/products/ice-coffee.jpg 1x,
-              ./images/products/ice-coffee-2.jpg 2x
-            " 
-            media="(max-width:767)" 
-          />
-          <img class="products-list__photo" src="./images/products/ice-coffee-des.jpg" alt="ice coffee">
+      <li class="products-list__item">
+        <div class="products-list__thumb">
+          <picture>
+            <source 
+              srcset="
+                ./images/products/ice-coffee-des.jpg 1x,
+                ./images/products/ice-coffee-des-2.jpg 2x
+              " 
+              media="(min-width:1200px)" 
+            />
+            <source 
+              srcset="
+                ./images/products/ice-coffee-tab.jpg 1x,
+                ./images/products/ice-coffee-tab-2.jpg 2x
+              " 
+              media="(min-width:768)" 
+            />
+            <source 
+              srcset="
+                ./images/products/ice-coffee.jpg 1x,
+                ./images/products/ice-coffee-2.jpg 2x
+              " 
+              media="(max-width:767)" 
+            />
+            <img class="products-list__photo" src="./images/products/ice-coffee-des.jpg" alt="ice coffee">
 
-        </picture>
-        <h2 class="products-list__title">ice coffee</h2>
-        <p class="products-list__text">Fragrant invigorating drink created from 100% natural ingredients without the use
-        of preservatives and flavor enhancers</p>
+          </picture>
+        </div>
+        <div class="products-list__box">
+          <h2 class="products-list__title">ice coffee</h2>
+          <p class="products-list__text">Fragrant invigorating drink created from 100% natural ingredients without the use
+          of preservatives and flavor enhancers</p>
+        </div>
       </li>
-      <li class="products-item">
-        <picture>
-          <source 
-            srcset="
-              ./images/products/milkshakes-des.jpg 1x,
-              ./images/products/milkshakes-des-2.jpg 2x
-            " 
-            media="(min-width:1200px)" 
-          />
-          <source 
-            srcset="
-              ./images/products/milkshakes-tab.jpg 1x,
-              ./images/products/milkshakes-tab-2.jpg 2x
-            " 
-            media="(min-width:768)" 
-          />
-          <source 
-            srcset="
-              ./images/products/milkshakes.jpg 1x,
-              ./images/products/milkshakes-2.jpg 2x
-            " 
-            media="(max-width:767)" 
-          />
-          <img class="products-list__photo" src="./images/products/milkshakes-des.jpg" alt="milkshakes">
-        </picture>
-        <h2 class="products-list__title">milkshakes</h2>
-        <p class="products-list__text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
-        berries and other sweets of your choice</p>
+      <li class="products-list__item">
+        <div class="products-list__box">
+          <picture>
+            <source 
+              srcset="
+                ./images/products/milkshakes-des.jpg 1x,
+                ./images/products/milkshakes-des-2.jpg 2x
+              " 
+              media="(min-width:1200px)" 
+            />
+            <source 
+              srcset="
+                ./images/products/milkshakes-tab.jpg 1x,
+                ./images/products/milkshakes-tab-2.jpg 2x
+              " 
+              media="(min-width:768)" 
+            />
+            <source 
+              srcset="
+                ./images/products/milkshakes.jpg 1x,
+                ./images/products/milkshakes-2.jpg 2x
+              " 
+              media="(max-width:767)" 
+            />
+            <img class="products-list__photo" src="./images/products/milkshakes-des.jpg" alt="milkshakes">
+          </picture>
+        </div>
+        <div class="products-list__box">
+          <h2 class="products-list__title">milkshakes</h2>
+          <p class="products-list__text">Sweet drinks based on milk and ice cream, supplemented with syrups, fruits,
+          berries and other sweets of your choice</p>
+        </div>
 
       </li>
     </ul>

@@ -80,6 +80,10 @@
     }
 }
 
+.products-list__thumb {
+ display: flex;
+ justify-content:center;
+}
 .products-list__box {
     max-width: 280px;
     border-radius: 24px;

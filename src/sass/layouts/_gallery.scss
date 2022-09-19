@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .gallery {
   width: 280px;
   height: auto;
@@ -13,6 +14,9 @@
   }
 }
 .gallery__thumb {
+=======
+.gallery-thumb {
+>>>>>>> Stashed changes
   position: relative;
   background-color: #ffffff;
   width: 280px;
@@ -39,7 +43,7 @@
 }
 }
 
-.main-gallery-container__picture {position: relative;}
+.gallery-thumb__picture {position: relative;}
 .secondary-image-list {position: absolute;}
 .secondary-image__item {position: absolute; 
   top: 0;
@@ -55,18 +59,18 @@
     @include tablet {width: 704px;}
     @include desktop {width: 1013px;}}
   }
-.main-gallery-container__picture > img {animation-name: rotate;
-  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  animation-direction: normal;
-  animation-delay: 5s;}
+.gallery-thumb__picture > img {
+  animation-delay: 15s;}
 .secondary-image__item:nth-child(1) img {
   animation-delay: 10s;
 }
 
 .secondary-image__item:nth-child(2) img {
+<<<<<<< Updated upstream
   animation-delay: 0s;
+=======
+  animation-delay: 5s;
+>>>>>>> Stashed changes
 }
 @keyframes gallery {
   0% {

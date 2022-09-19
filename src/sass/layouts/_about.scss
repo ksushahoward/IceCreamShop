@@ -1,6 +1,7 @@
 .about-section {
   background: #84a178;
   padding-top: 60px;
+  z-index: 1;
 }
 .about-pre-titile_text {
   font-family: 'Montserrat';
@@ -10,10 +11,6 @@
   text-transform: uppercase;
   color: #fcfcfc;
   margin-bottom: 12px;
-  // // padding-left: 52px;
-  // // padding-right: 58px;
-  // margin-left: auto;
-  // margin-right: auto;
 }
 .about-titile {
   font-family: 'Seymour One';
@@ -23,11 +20,7 @@
   text-transform: uppercase;
   color: #fcfcfc;
   margin: 0 auto;
-
   margin-bottom: 32px;
-
-  // margin-left: auto;
-  // margin-right: auto;
   padding-left: 56px;
   padding-right: 64px;
   min-width: 200px;
@@ -52,42 +45,85 @@
 }
 .about-img {
   margin-bottom: 40px;
-
-  // padding-left: 20px;
-  // padding-right: 20px;
-
   @include tablet {
-    // padding-right: 0;
-    // padding-left: 32px;
-    // padding-right: 32px;
-
     min-width: 336px;
   }
   @include desktop {
     max-width: 500px;
   }
 }
+// ------------------------------------
 .about-img__picture {
   width: 100%;
-
-  border-radius: 1040px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // min-width: 280px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  z-index: 2;
   @include tablet {
-    // min-width: 336px;
+    border: none;
   }
 }
+// .cow-thumb {
+//   position: relative;
+// }
+.cow-thumb {
+  z-index: 3;
+  position: relative;
+  width: 279px;
+  height: 279px;
+  @include tablet {
+    width: 334px;
+    height: 334px;
+  }
+  @include desktop {
+    width: 500px;
+    height: 500px;
+  }
+  border-radius: 50%;
+}
+
+.cow-thumb::after {
+  content: '';
+  display: inline-block;
+  width: 279px;
+  height: 279px;
+  bottom: 22px;
+  @include tablet {
+    width: 336px;
+    height: 336px;
+    bottom: 26px;
+  }
+  @include desktop {
+    bottom: 29px;
+
+    width: 500px;
+    height: 500px;
+  }
+  background-image: linear-gradient(
+    to right,
+    rgba(248, 210, 78, 0.7),
+    rgba(248, 210, 78, 0.7)
+  );
+  background-color: #d9d9d9;
+  position: absolute;
+
+  left: -2px;
+  z-index: -2;
+  border-radius: 50%;
+}
+// .about-img__picture-back {
+//   max-width: 500px;
+//   max-height: 500px;
+//   position: absolute;
+//   top: -22;
+//   z-index: -2;
+// }
+// __________________-------------------
 
 .about-pre-text {
   display: flex;
   flex-direction: column;
-  // text-align: center;
   width: 220px;
   margin: 0 auto;
-  // padding-left: 50px;
-  // padding-right: 50px;
-
   @include tablet {
     min-width: 336px;
     margin-left: 32px;
@@ -109,9 +145,6 @@
 
   @include tablet {
     text-align: left;
-    // padding-left: 32px;
-    //   padding-right: 32px;
-    //   min-width: 336px;
   }
 }
 .hidden {
@@ -154,3 +187,6 @@
   background: #0a8817;
   color: #fcfcfc;
 }
+// .about-btn__logo {
+//   fill: currentColor;
+// }

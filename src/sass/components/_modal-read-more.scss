@@ -1,9 +1,29 @@
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
 .modal__read-more {
-  width: 280px;
+  z-index: 2;
+  max-width: 530px;
+  @include tablet {
+    max-width: 568px;
+    height: 449px;
+  }
 }
 
 .youtube-video {
-  width: 224px;
+  border-radius: 10px;
+  max-width: 224px;
   height: 199px;
+  @include mobile {
+    max-width: 448px;
+    height: 205px;
+  }
   margin-bottom: 20px;
+}
+
+.backdrop__read-more-modal {
+  z-index: 10;
 }

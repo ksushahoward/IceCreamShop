@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 .gallery {
   width: 280px;
   height: auto;
@@ -13,10 +12,8 @@
     width: 1013px;
   }
 }
-.gallery__thumb {
-=======
+
 .gallery-thumb {
->>>>>>> Stashed changes
   position: relative;
   background-color: #ffffff;
   width: 280px;
@@ -66,12 +63,8 @@
 }
 
 .secondary-image__item:nth-child(2) img {
-<<<<<<< Updated upstream
-  animation-delay: 0s;
-=======
   animation-delay: 5s;
->>>>>>> Stashed changes
-}
+
 @keyframes gallery {
   0% {
     opacity: 1;
@@ -88,6 +81,7 @@
   100% {
     opacity: 1;
   }
+}
 }
 @keyframes rotate {
   0% {

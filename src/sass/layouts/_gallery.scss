@@ -14,7 +14,7 @@
 }
 
 .gallery-thumb {
-  position: relative;
+  position: absolute;
   background-color: #ffffff;
   width: 280px;
   top: -16px;
@@ -40,7 +40,7 @@
 }
 }
 
-.gallery-thumb__picture {position: relative;}
+.gallery-thumb__picture {position: absolute;}
 .secondary-image-list {position: absolute;}
 .secondary-image__item {position: absolute; 
   top: 0;

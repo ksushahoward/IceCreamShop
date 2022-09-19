@@ -1,29 +1,11 @@
-<<<<<<< Updated upstream
-.gallery {
-  width: 280px;
-  height: auto;
-  margin: 0;
-  @include mobile {
-    width: 440px;
-  }
-  @include tablet {
-    width: 704px;
-  }
-  @include desktop {
-    width: 1013px;
-  }
-}
 .gallery__thumb {
-=======
-.gallery-thumb {
->>>>>>> Stashed changes
-  position: relative;
+  position: absolute;
   background-color: #ffffff;
   width: 280px;
+  height: 130px;
   top: -16px;
   margin-left: auto;
   margin-right: auto;
-  overflow: auto;
   border-radius: 7px;
   overflow: hidden;
   border: none;
@@ -43,7 +25,6 @@
 }
 }
 
-.gallery-thumb__picture {position: relative;}
 .secondary-image-list {position: absolute;}
 .secondary-image__item {position: absolute; 
   top: 0;
@@ -66,12 +47,10 @@
 }
 
 .secondary-image__item:nth-child(2) img {
-<<<<<<< Updated upstream
-  animation-delay: 0s;
-=======
   animation-delay: 5s;
->>>>>>> Stashed changes
 }
+
+
 @keyframes gallery {
   0% {
     opacity: 1;
@@ -89,6 +68,7 @@
     opacity: 1;
   }
 }
+
 @keyframes rotate {
   0% {
       opacity: 1;

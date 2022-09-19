@@ -100,6 +100,8 @@
     width: 768px;
 
     padding-top: 104px;
+    padding-left: 32px;
+    padding-right: 32px;
     background-image: url(../images/Hero_points_tablet-NN-min.png);
     background-size: contain;
     background-repeat: no-repeat;
@@ -109,6 +111,8 @@
   @include desktop {
     width: 1200px;
     padding-top: 118px;
+    padding-left: 16px;
+    padding-right: 16px;
     background-image: url(../images/Hero_points_desktop-NN-min.png);
   }
 }
@@ -330,7 +334,7 @@
 
   display: flex;
   flex-direction: column;
-  margin-left: 197px;
+  margin-left: 185px;
   width: 151px;
 
   @include desktop {

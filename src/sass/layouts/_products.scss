@@ -2,7 +2,7 @@
     padding: 60px 20px;
     display: block;
     text-align: center;
-    background-image: linear-gradient(rgba(25,28,38,0.2),rgba(25, 28, 38, 0.2), url(../images/ice-cream-back.jpg));
+    background-image: linear-gradient rgba(25,28,38,0.2),rgba(25, 28, 38, 0.2), url(ice-cream-back.be934829.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,6 +72,9 @@
 .products-list__item {
     position:relative;
     width: 100%;
+    @media screen and (min-width:480px) {
+        max-width:480px;
+    }
     @media screen and (min-width: 768px) {
         width: calc((100% - 32px)/3);
     }
@@ -84,10 +87,6 @@
 .products-list__thumb {
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -180%) scale(1); 
 }
 .products-list__box {
     max-width: 280px;
@@ -101,6 +100,7 @@
     }
     @include desktop {
         max-width: 370px;
+        height:718px;
         padding: 166px 62px 109px 61px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     }

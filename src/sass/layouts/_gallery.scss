@@ -1,21 +1,8 @@
-.gallery {
-  width: 280px;
-  height: auto;
-  margin: 0;
-  @include mobile {
-    width: 440px;
-  }
-  @include tablet {
-    width: 704px;
-  }
-  @include desktop {
-    width: 1013px;
-  }
-}
 .gallery__thumb {
   position: relative;
   background-color: #ffffff;
   width: 280px;
+  height: 130px;
   top: -16px;
   margin-left: auto;
   margin-right: auto;
@@ -23,17 +10,21 @@
   border-radius: 7px;
   overflow: hidden;
   border: none;
+  z-index: 2;
   @include mobile {
     width: 440px;
+    height: auto;
     top: -22px;
   }
   @include tablet {
     width: 704px;
+    height: 327px;
     top: -50px;
     border-radius: 18px;}
   
   @include desktop {
     width: 1013px;
+    height: 422px;
     top: -92px;
     border-radius: 24px;
 }
@@ -64,9 +55,8 @@
 .secondary-image__item:nth-child(1) img {
   animation-delay: 10s;
 }
-
 .secondary-image__item:nth-child(2) img {
-  animation-delay: 0s;
+  animation-delay: 10s;
 }
 @keyframes gallery {
   0% {

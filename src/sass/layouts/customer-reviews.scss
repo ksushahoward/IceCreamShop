@@ -9,7 +9,7 @@
   display: flex;
   border-radius: 50%;
 
-  margin-top: 452px;
+  margin-top: 128px;
   margin-bottom: 32px;
   @extend %align-justify-center;
 }
@@ -21,7 +21,7 @@
   display: flex;
   border-radius: 50%;
 
-  margin-top: 452px;
+  margin-top: 128px;
   margin-bottom: 32px;
   @extend %align-justify-center;
 }
@@ -33,7 +33,7 @@
   display: flex;
   border-radius: 50%;
 
-  margin-top: 452px;
+  margin-top: 128px;
   margin-bottom: 32px;
   @extend %align-justify-center;
 }
@@ -45,7 +45,7 @@
   display: flex;
   border-radius: 50%;
 
-  margin-top: 452px;
+  margin-top: 128px;
   margin-bottom: 32px;
   @extend %align-justify-center;
 }
@@ -139,6 +139,6 @@
 }
 
 .glide-arrow-pos:hover,
-.glide-arrow-pos:focus {
+.ust-rev-center-arrow-pos:focus {
   color: green;
 }

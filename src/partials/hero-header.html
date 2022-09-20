@@ -1,0 +1,287 @@
+<header class="header">
+  <section class="container header__container">
+    <a class="logo" href="./index.html">
+      <picture>
+        <source
+          srcset="
+            ./images/ice-cream_logo_desktop_NN-min.png    1x,
+            ./images/ice-cream_logo_desktop_NN@2x-min.png 2x
+          "
+          media="(min-width:1200px)"
+        />
+        <source
+          srcset="
+            ./images/ice-cream_logo_tablet_NN-min.png    1x,
+            ./images/ice-cream_logo_tablet_NN@2x-min.png 2x
+          "
+          media="(min-width:768px)"
+        />
+        <source
+          srcset="
+            ./images/ice-cream_logo_mobile_NN-min.png    1x,
+            ./images/ice-cream_logo_mobile_NN@2x-min.png 2x
+          "
+          media="(max-width:767px)"
+        />
+        <img
+          src="./images/ice-cream_logo_tablet_NN-min.png "
+          alt="logo"
+        /> </picture
+    ></a>
+
+    <nav class="navigation">
+      <ul class="navigation__list list">
+        <li class="navigation__item">
+          <a class="navigation__link link" href="./index.html">Home</a>
+        </li>
+        <li class="navigation__item">
+          <a
+            class="navigation__link link"
+            href="#made"
+            class="navigation__link link"
+            >How it’s made?</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link link" href="" class="navigation__link link"
+            >Our products</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a
+            class="navigation__link link"
+            href="#contacts"
+            class="navigation__link link"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <div class="button-box">
+      <button
+        class="mobile-menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg
+          class="icon-menu"
+          width="32"
+          height="32"
+          aria-label="Перемикач мобільного меню"
+        >
+          <use href="./images/icons.svg#icon-Burger"></use>
+        </svg>
+      </button>
+    </div>
+
+    <button data-buy-now-modal-open class="header-button button" type="button">
+      Buy now
+      <svg class="header-button__arrow" width="12" height="12">
+        <use href="../src/images/icons.svg#icon-arow"></use>
+      </svg>
+    </button>
+  </section>
+</header>
+
+<section class="hero">
+  <div class="container hero__container">
+    <div class="hero-box">
+      <div class="hero-box-left-part">
+        <h1 class="hero__title">
+          ice cream made with
+          <span class="hero__title--big-word"> passion</span>
+        </h1>
+        <ul class="hero-list list">
+          <li class="hero-list__item">
+            <a href="" class="hero-list__link link">Products</a>
+          </li>
+          <li class="hero-list__item">
+            <a href="" class="hero-list__link link">How it’s made?</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="sales-point-list list">
+        <li class="sales-point-list__item">
+          <span>16</span>
+          <p class="sales-point-list__text">cafes</p>
+        </li>
+        <li class="sales-point-list__item">
+          <span>23</span>
+          <p class="sales-point-list__text">food trucks</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="text-arrow-wrapper">
+      <p class="hero-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et
+      </p>
+
+      <a href="" class="arrow-link link">
+        <svg
+          class="arrow-link__icon arrow-link__icon--default"
+          width="40"
+          height="16"
+        >
+          <use href="./images/icons.svg#icon-arrow-default"></use>
+        </svg>
+        <svg
+          class="arrow-link__icon arrow-link__icon--hover"
+          width="50"
+          height="16"
+        >
+          <use href="./images/icons.svg#icon-arrow-hover"></use>
+        </svg>
+        <svg
+          class="arrow-link__icon arrow-link__icon--focus"
+          width="50"
+          height="23"
+        >
+          <use href="./images/icons.svg#icon-arrow-focus"></use>
+        </svg>
+      </a>
+    </div>
+
+    <picture
+      ><source
+        srcset="
+          ./images/hero-plate-with-ice-cream-desktop-NN-min.png    1x,
+          ./images/hero-plate-with-ice-cream-desktop-NN@2x-min.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero-plate-with-ice-cream-tablet-NN-min.png    1x,
+          ./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <img
+        class="hero-first-image"
+        src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"
+        alt="Plate with ice cream"
+        width="225"
+        height="225"
+      />
+    </picture>
+
+    <picture
+      ><source
+        srcset="
+          ./images/hero-ice-cream_desktop-NN-min.png    1x,
+          ./images/hero-ice-cream_desktop-NN@2x-min.png 2x
+        "
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="
+          ./images/hero-ice-cream_tablet-NN-min.png    1x,
+          ./images/hero-ice-cream_tablet-NN@2x-min.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="
+          ./images/hero-ice-cream_mobile-NN.png    1x,
+          ./images/hero-ice-cream_mobile-NN@2x.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <img
+        class="hero-second-image"
+        src="./images/hero-plate-with-ice-cream-tablet-NN@2x-min.png"
+        alt="Plate with ice cream"
+        width="484"
+        height="590"
+      />
+    </picture>
+  </div>
+</section>
+
+<!-- ----- MOBILE MENU ------- -->
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <a class="logo menu-container__logo" href="./index.html">
+    <picture>
+      <source
+        srcset="
+          ./images/ice-cream_logo_tablet_NN-min.png    1x,
+          ./images/ice-cream_logo_tablet_NN@2x-min.png 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <source
+        srcset="
+          ./images/ice-cream_logo_mobile_NN-min.png    1x,
+          ./images/ice-cream_logo_mobile_NN@2x-min.png 2x
+        "
+        media="(max-width:767px)"
+      />
+
+      <img src="./images/ice-cream_logo_tablet_NN-min.png " alt="logo" />
+    </picture>
+  </a>
+
+  <button class="menu-toggle js-close-menu">
+    <svg
+      class="menu-toggle__cross-icon"
+      width="32"
+      height="32"
+      aria-label="Перемикач мобільного меню"
+    >
+      <use
+        class="icon-cross"
+        href="./images/icons.svg#icon-close-btn-mobile"
+      ></use>
+    </svg>
+  </button>
+
+  <ul class="mobile-nav-list list">
+    <li class="mobile-nav-list__item">
+      <a class="mobile-nav-list__link link" href="./index.html">Home</a>
+    </li>
+    <li class="mobile-nav-list_item">
+      <a
+        class="mobile-nav-list__link link"
+        href="./index.html#made"
+        class="mobile-nav-list__link link"
+        >How it’s made?</a
+      >
+    </li>
+    <li class="mobile-nav-list__item">
+      <a
+        class="mobile-nav-list__link link"
+        href=""
+        class="mobile-nav-list__link link"
+        >Our products</a
+      >
+    </li>
+    <li class="mobile-nav-list__item">
+      <a
+        class="mobile-nav-list__link link"
+        href="./index.html#contacts"
+        class="mobile-nav-list__link link"
+        >Contact</a
+      >
+    </li>
+  </ul>
+
+  <button
+    class="header-button menu-container__header-button button"
+    type="button"
+  >
+    Buy now
+    <svg class="header-button__arrow" width="12" height="12">
+      <use href="../src/images/icons.svg#icon-arow"></use>
+    </svg>
+  </button>
+</div>

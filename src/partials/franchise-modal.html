@@ -1,0 +1,62 @@
+<div data-franchise-modal class="backdrop modal-is-hidden">
+  <div class="franchise-modal modal">
+    <button data-franchise-modal-close type="button" class="modal__btn-close">
+      <svg width="20" height="20">
+        <use
+          class="modal__icon--mobile"
+          href="./images/icons.svg#icon-close-btn-mobile"
+        ></use>
+        <use
+          class="modal__icon--desktop"
+          href="./images/icons.svg#icon-close-btn-desktop"
+        ></use>
+      </svg>
+    </button>
+    <h3 class="modal__title">
+      Thank you for your interest in owning an Ice Cream shop
+    </h3>
+    <p class="modal__text modal__text--margin-bottom">
+      Due to the overwhelming volume of franchise requests we are not accepting
+      new franchisee applications at this time. Once the application process
+      resumes, we will contact you for further information. Please fill out the
+      contact information below and we will reach out for additional
+      information. We appreciate your patience.
+    </p>
+    <form class="modal__form" action="">
+      <div class="modal__form-field">
+        <input
+          required
+          class="modal__input"
+          type="text"
+          name="username"
+          placeholder="Name"
+        />
+      </div>
+      <div class="modal__form-field">
+        <input
+          required
+          class="modal__input"
+          type="text"
+          name="phone"
+          placeholder="Phome"
+        />
+      </div>
+      <div class="modal__form-field">
+        <input
+          required
+          class="modal__input"
+          type="text"
+          name="mail"
+          placeholder="Email"
+        />
+      </div>
+
+      <div class="modal__form-field modal__form-field--other-margin">
+        <textarea class="modal__textarea" placeholder="Comment"></textarea>
+      </div>
+      <div class="modal__form-field modal__form-field--not-margin">
+        <button class="modal__btn" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

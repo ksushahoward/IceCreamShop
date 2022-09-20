@@ -1,0 +1,17 @@
+.franchise-modal {
+  max-width: 530px;
+  min-width: 320px;
+  @include tablet {
+    max-width: 568px;
+    width: 568px;
+    height: 668px;
+  }
+}
+
+.btn-test {
+  position: relative;
+  left: -100%;
+  transform: translateY(-100%);
+  width: 100px;
+  height: 100px;
+}

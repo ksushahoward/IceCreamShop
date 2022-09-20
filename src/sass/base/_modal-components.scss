@@ -8,7 +8,7 @@
   background: rgba(0, 0, 0, 0.4);
   padding: 15px 30px;
   overflow-y: scroll;
-  z-index: 1000000000000000000000000000000000000;
+  z-index: 1;
   &.modal-is-hidden {
     pointer-events: none;
     opacity: 0;

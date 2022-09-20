@@ -73,22 +73,81 @@ margin-bottom: 32px;
   
   font-family: 'Montserrat';
 font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 186%;
+
+
 
 text-align: center;
 letter-spacing: 0.04em;
+@media screen and (max-width:767px) {
+font-weight: 400;
+font-size: 12px;
+line-height: 255%;
+}
+@media screen and (min-width:768px) {
+  font-weight: 500;
+font-size: 14px;
+line-height: 186%;
+}
+@media screen and (min-width:1200px) {
+  font-weight: 500;
+font-size: 16px;
+line-height: 186%;
+}
+text-align: center;
 
+margin-bottom: 32px;
+@extend %align-justify-center
+}
+
+.cust-rev-font1{
+  
+  font-family: 'Montserrat';
+font-style: normal;
+
+
+
+text-align: center;
+letter-spacing: 0.04em;
+@media screen and (max-width:767px) {
+font-weight: 500;
+font-size: 20px;
+line-height: 186%;
+}
+@media screen and (min-width:768px) {
+  font-weight: 500;
+font-size: 16px;
+line-height: 186%;
+}
+@media screen and (min-width:1200px) {
+  font-weight: 500;
+font-size: 16px;
+line-height: 186%;
+}
+text-align: center;
 
 margin-bottom: 32px;
 @extend %align-justify-center
 }
 
 .cust-rev-font-back{
-  padding: 40px 75px;
+ 
   background-color: #84A178;
   border-radius: 24px;
+@media screen and (min-width:1200px) {
+  padding: 40px 75px;
+  margin: 0 115px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width:768px) {
+  padding: 30px 80px;
+  margin: 0 30px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width:767px) {
+  padding: 35px 40px;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
 }
 
 
@@ -97,10 +156,7 @@ margin-bottom: 32px;
   justify-content: center;
   align-items: center;
 }
-.swiper {
-width: 1200px;
 
-}
 
 
 .swiper-pagination-bullet{

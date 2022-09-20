@@ -2,9 +2,14 @@
   background-color: var(--bgc-dark-olive);
   padding-top: 38px;
   padding-bottom: 62px;
+
   @include tablet {
     padding-top: 40px;
     padding-bottom: 13px;
+  }
+  @include desktop{
+  padding-top: 120px;
+  padding-bottom: 11px;
   }
 }
 
@@ -15,6 +20,7 @@
     display: flex;
     justify-content: space-between;
   }
+ 
 }
 
 .tagline__item {
@@ -35,6 +41,17 @@
       margin-bottom: 32px;
     }
   }
+
+  @include desktop {
+    margin-left: 16px;
+    margin-bottom: 14px;
+
+    &:last-child {
+      margin-left: 16px;
+      margin-bottom: 54px;
+    }
+
+  }
 }
 
 .tagline__text {
@@ -52,6 +69,13 @@
     line-height: calc(32 / 26);
     letter-spacing: 0.04em;
   }
+
+  @include desktop {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: calc(37 / 30);
+    width: 100%;
+  }
 }
 
 .tagline__text--akcent {
@@ -63,6 +87,12 @@
     font-size: 48px;
     letter-spacing: calc(59 / 48);
     letter-spacing: 0.06em;
+  }
+
+  @include desktop {
+    font-size: 58px;
+    line-height: calc(71 / 58);
+    font-weight: 700;
   }
 }
 
@@ -77,6 +107,11 @@
     flex-direction: column;
     justify-content: flex-end;
   }
+
+  @include desktop {
+    margin-right: 16px;
+
+  }
 }
 
 .social__list {
@@ -89,6 +124,7 @@
     gap: 30px;
     margin-bottom: 32px;
   }
+  @include desktop{margin-bottom: 40px;}
 }
 
 .social__item {
@@ -110,6 +146,7 @@
   transition: width, height;
   transition-duration: 200ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover {
     width: 32px;
     height: 32px;
@@ -145,7 +182,10 @@
 
   @include tablet {
     font-size: 14px;
-    line-height: 186%;
+  }
+  @include desktop
+  {
+    font-size: 16px;
   }
 }
 
@@ -162,9 +202,11 @@
 .footer__border {
   margin-bottom: 16px;
   border-bottom: 1px solid #e1e1e1;
+
   @include tablet {
     margin-bottom: 14px;
   }
+  @include desktop{margin-bottom: 12px; }
 }
 
 .copyright {
@@ -175,10 +217,12 @@
   color: #7a7a7a;
   width: 137px;
   margin: auto;
+
   @include tablet {
     font-size: 14px;
     line-height: 186%;
     width: 100%;
     letter-spacing: 0.02em;
   }
+  @include desktop{font-size: 12px;}
 }

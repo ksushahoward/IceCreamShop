@@ -99,16 +99,17 @@
     max-width: 280px;
     border-radius: 24px;
     height: 420px;
-    padding: 123px 40px 110px 40px;
+    padding: 123px 40px 20px 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     @include tablet {
         max-width: 224px;
-        padding: 107px 26px 109px 26px;
+        padding: 107px 26px 20px 26px;
         height: 428px;
     }
     @include desktop {
         max-width: 370px;
         height:718px;
-        padding: 166px 62px 109px 61px;
+        padding: 166px 62px 60px 61px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     }
 }
@@ -143,13 +144,23 @@
 
 .products-list__text {
     font-family: 'Montserrat';
+    margin-bottom: 90px;
     @include font(400, 14px, 1.76, 0.04em);
+    @include tablet {
+        margin-bottom:60px;
+    }
     @include desktop {
         font-size: 16px;
+        margin-bottom: 70px;
     }
     color: #131313;
 }
 
 .products-list__photo {
     border-radius:50%;
+    margin-bottom: -45%;
+    @media desktop {
+        margin-bottom: -35%;
+    }
 }
+

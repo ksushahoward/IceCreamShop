@@ -2,9 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.header-hero-wrapper {
+  position: relative;
+}
+
 .header {
   position: absolute;
-  width: 100vw;
+  width: 100%;
 
   z-index: 1;
   background-color: transparent;
@@ -18,15 +22,15 @@ html {
 }
 
 .header__container {
-  padding-top: 12px;
+  padding-top: 8px;
   padding-left: 20px;
   padding-right: 20px;
   display: flex;
 
   @include tablet {
-    align-items: center;
-
+    align-items: flex-start;
     padding-top: 20px;
+
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -79,10 +83,15 @@ html {
     color: #fcfcfc;
     background-color: #0a8817;
   }
+
+  @include desktop {
+    margin-top: 20px;
+  }
 }
 
 .hero__container {
   position: relative;
+
   height: 100%;
   padding-top: 110px;
   padding-left: 20px;
@@ -135,8 +144,8 @@ html {
 
   &__link {
     display: block;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 32px;
+    padding-bottom: 13px;
 
     font-family: 'Montserrat';
 
@@ -503,15 +512,6 @@ html {
   cursor: pointer;
   border: none;
 
-  outline: none;
-
-  color: red;
-
-  &:hover,
-  &:focus {
-    fill: pink;
-  }
-
   @include tablet {
     top: 32px;
     right: 32px;
@@ -570,7 +570,10 @@ html {
 }
 
 .button-box {
+  display: flex;
+
   margin-left: auto;
+  margin-top: 4px;
 }
 
 .menu-container.is-open {

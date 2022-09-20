@@ -1,0 +1,37 @@
+// Buy now modal
+.modal1__text {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  width: 114px;
+  height: 42px;
+  padding: 0;
+  background: #f8d24e;
+  border-radius: 10px;
+  margin-top: 24px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  @extend %align-justify-center;
+  @include tablet {
+    width: 121px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  cursor: pointer;
+  color: #131313;
+  border: none;
+}

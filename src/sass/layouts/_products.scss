@@ -144,14 +144,10 @@
 
 .products-list__text {
     font-family: 'Montserrat';
-    margin-bottom: 90px;
     @include font(400, 14px, 1.76, 0.04em);
-    @include tablet {
-        margin-bottom:60px;
-    }
     @include desktop {
         font-size: 16px;
-        margin-bottom: 70px;
+
     }
     color: #131313;
 }
@@ -165,7 +161,14 @@
 }
 
 .products-button {
-    background: transperent;
-    border: transparent;
+    background-color: transperent;
+    border: none;
+    width: 130px;
+    height: 22px;
+    padding: 5px 1px;
+    margin-bottom:20px;
+    @include desktop {
+     margin-bottom: 60px;
+    }
     
 }

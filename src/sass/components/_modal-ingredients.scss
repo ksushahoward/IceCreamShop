@@ -1,6 +1,8 @@
 .ingredients .modal {
-  top: 0;
-  transform: translate(-50%);
+  @media screen and (max-height: 909px) {
+    top: 0;
+    transform: translate(-50%);
+  }
 }
 
 .ingredients__picture {

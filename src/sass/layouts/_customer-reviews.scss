@@ -374,7 +374,19 @@ background-color: #84a178;
 }
 
 .swiper-pagination{
-  margin-top: 32px;
-  margin-bottom: 207px;
+  
+
   position: relative;
+  @media screen and (max-width:767px) {
+    margin-bottom: 207px;
+    margin-top: 14px;
+  }
+  @media screen and (min-width:768px) {
+    margin-bottom: 383px;
+    margin-top: 32px;
+  }
+  @media screen and (min-width:1200px) {
+    margin-bottom: 394px;
+    margin-top: 32px;
+  }
   }

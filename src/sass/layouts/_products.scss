@@ -94,20 +94,6 @@
 .products-list__thumb {
     display: flex;
     justify-content: center;
-    border-radius: 50%;
-    background-color: rgba(248, 210, 78, 0.7);
-    position:relative;
-    z-index:0;
-    width: 200px;
-    height: 200px;
-    @include tablet {
-        width: 198px;
-        height: 196px;
-    }
-    @include desktop {
-        width: 300px;
-        height: 300px;
-    }
 }
 .products-list__box {
     max-width: 280px;
@@ -187,4 +173,21 @@
      margin-bottom: 60px;
     }
     
+}
+.circle {
+    border-radius: 50%;
+    background-color: rgba(248, 210, 78, 0.7);
+    position: relative;
+    z-index: 0;
+    width: 200px;
+    height: 200px;
+    @include tablet {
+        width: 198px;
+        height: 196px;
+    }
+    
+    @include desktop {
+        width: 300px;
+        height: 300px;
+    }
 }

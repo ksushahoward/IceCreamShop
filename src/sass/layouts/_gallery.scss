@@ -60,19 +60,15 @@
 @keyframes opacity {
   0% {
   opacity: 1;
-  transform: rotate(0) scale(1);
 }
 45% {
 opacity: 1;
-transform: rotate(0) scale(1);
 }
 55% {
 opacity: 0;
-transform: rotate(45deg) scale(3);
 }
 5% {
   opacity: 0;
-  transform: rotate(75deg) scale(3);
   }
 100% {
 opacity: 1;

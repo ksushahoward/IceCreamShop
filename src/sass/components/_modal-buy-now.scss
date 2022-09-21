@@ -1,6 +1,9 @@
 // Buy now modal
 .modal1__item {
   position: relative;
+  @include tablet {
+    display: flex;
+  }
 }
 .modal1__item + .modal1__item {
   margin-top: -50px;

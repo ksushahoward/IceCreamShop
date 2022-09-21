@@ -15,14 +15,24 @@
 }
 
 .contacts__container {
+  position: relative;
+  top: -345px;
+  left: 0;
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: -345px;
 
   @include tablet {
+    top: -304px;
+    margin-bottom: -304px;
+
     padding-left: 32px;
     padding-right: 32px;
   }
   @include desktop {
+    top: -96px;
+    margin-bottom: -96px;
+
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -54,7 +64,6 @@
 }
 
 .contacts__item {
-  //@include flex-basis(1);
   max-width: 280px;
   padding-bottom: 40px;
   padding-top: 40px;
@@ -218,7 +227,8 @@
   border: 2px solid var(--accent-color-yellow);
   cursor: pointer;
   transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   @include tablet {

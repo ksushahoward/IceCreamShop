@@ -32,47 +32,53 @@
   margin-left: 20px;
   margin-right: 20px;
   @include tablet {
+    margin-left: 32px;
+    margin-right: 32px;
     display: flex;
-    justify-content: space-around;
+
+    // justify-content: space-around;
     align-items: center;
   }
   @include desktop {
     margin-left: 18px;
     margin-right: 121px;
-    margin-left: 32px;
-    margin-right: 32px;
   }
 }
 .about-img {
   margin-bottom: 40px;
+  margin: 0 auto;
   @include tablet {
     min-width: 336px;
+    margin: 0 0;
   }
   @include desktop {
     max-width: 500px;
+    margin: 0 0;
   }
 }
 // ------------------------------------
 .about-img__picture {
-  width: 100%;
-  border: 1px solid #000000;
+  // width: 100%;
   border-radius: 50%;
   z-index: 2;
-  @include tablet {
-    border: none;
-  }
 }
 // .cow-thumb {
 //   position: relative;
 // }
 .cow-thumb {
+  display: flex;
+  text-align: center;
   z-index: 3;
   position: relative;
   width: 279px;
   height: 279px;
+  @include mobile {
+  }
+
   @include tablet {
     width: 334px;
     height: 334px;
+    margin-bottom: 53px;
   }
   @include desktop {
     width: 500px;
@@ -110,6 +116,15 @@
   z-index: -2;
   border-radius: 50%;
 }
+.about-img {
+  margin-bottom: 40px;
+  @include tablet {
+    min-width: 336px;
+  }
+  @include desktop {
+    max-width: 500px;
+  }
+}
 // .about-img__picture-back {
 //   max-width: 500px;
 //   max-height: 500px;
@@ -125,7 +140,7 @@
   width: 220px;
   margin: 0 auto;
   @include tablet {
-    min-width: 336px;
+    min-width: 334px;
     margin-left: 32px;
     gap: 8px;
   }
@@ -134,7 +149,6 @@
     margin-left: 100px;
   }
 }
-
 .about-text {
   font-family: 'Montserrat';
   font-style: normal;
@@ -147,6 +161,21 @@
     text-align: left;
   }
 }
+// .aboute-text_one {
+//   margin-bottom: 3.84px;
+//   @include tablet {
+//     margin-bottom: 0px;
+//   }
+// }
+// .aboute-text_two {
+//   @include font(400, 12px, 1.55, 0.04em);
+// }
+// .aboute-text_three {
+//   @include tablet {
+//     @include font(400, 12px, 1.91, 0.04em);
+//     min-width: 334px;
+//   }
+// }
 .hidden {
   display: none;
   @include tablet {
@@ -170,7 +199,9 @@
   margin: 0 auto;
   margin-top: 20px;
   margin-bottom: 42.23px;
-
+  transition: background-color, color, fill;
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     margin: 0;
     margin-top: 48px;

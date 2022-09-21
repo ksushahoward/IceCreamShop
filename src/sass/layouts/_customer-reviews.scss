@@ -119,66 +119,46 @@
   }
 }
 
-.cust-rev-image1 {
-
-  background-image: url(/src/images/cust-rev-image1.jpg);
+.cust-rev-image1,.cust-rev-image2,.cust-rev-image3,.cust-rev-image4{
+ 
   width: 85px;
   height: 85px;
   display: flex;
   border-radius: 50%;
 
-
-
-margin-top: 452px;
+  @media screen and (max-width:767px) {
+    margin-top: 186px;
+  margin-bottom: 32px;
+  }
+  @media screen and (min-width:768px) {
+    margin-top: 218px;
+  margin-bottom: 28px;
+  }
+@media screen and (min-width:1200px) {
+  margin-top: 452px;
 margin-bottom: 32px;
-@extend %align-justify-center
-
 }
+
+@extend %align-justify-center
+}
+
+.cust-rev-image1{
+  background-image: url(/src/images/cust-rev-image1.jpg);
+}
+
 
 .cust-rev-image2{
 background-image: url(/src/images/cust-rev-image2.jpg);
-width: 85px;
-height: 85px;
-display: flex;
-border-radius: 50%;
-  margin-top: 452px;
-  margin-bottom: 32px;
-  @extend %align-justify-center;
 
 }
 
 .cust-rev-image3{
 background-image: url(/src/images/cust-rev-image3.jpg);
-width: 85px;
-height: 85px;
-display: flex;
-border-radius: 50%;
-
-
-
-
-
-  margin-top: 452px;
-  margin-bottom: 32px;
-  @extend %align-justify-center;
 
 }
 
 .cust-rev-image4{
 background-image: url(/src/images/cust-rev-image4.jpg);
-width: 85px;
-height: 85px;
-display: flex;
-border-radius: 50%;
-
-
-
-
-margin-top: 452px;
-margin-bottom: 32px;
-@extend %align-justify-center
-
-
 
 }
 
@@ -201,22 +181,81 @@ margin-bottom: 32px;
   
   font-family: 'Montserrat';
 font-style: normal;
-font-weight: 500;
-font-size: 16px;
-line-height: 186%;
+
+
 
 text-align: center;
 letter-spacing: 0.04em;
+@media screen and (max-width:767px) {
+font-weight: 400;
+font-size: 12px;
+line-height: 255%;
+}
+@media screen and (min-width:768px) {
+  font-weight: 500;
+font-size: 14px;
+line-height: 186%;
+}
+@media screen and (min-width:1200px) {
+  font-weight: 500;
+font-size: 16px;
+line-height: 186%;
+}
+text-align: center;
 
+margin-bottom: 32px;
+@extend %align-justify-center
+}
+
+.cust-rev-font1{
+  
+  font-family: 'Montserrat';
+font-style: normal;
+
+
+
+text-align: center;
+letter-spacing: 0.04em;
+@media screen and (max-width:767px) {
+font-weight: 500;
+font-size: 20px;
+line-height: 186%;
+}
+@media screen and (min-width:768px) {
+  font-weight: 500;
+font-size: 16px;
+line-height: 186%;
+}
+@media screen and (min-width:1200px) {
+  font-weight: 500;
+font-size: 16px;
+line-height: 186%;
+}
+text-align: center;
 
 margin-bottom: 32px;
 @extend %align-justify-center
 }
 
 .cust-rev-font-back{
-  padding: 40px 75px;
+ 
   background-color: #84A178;
   border-radius: 24px;
+@media screen and (min-width:1200px) {
+  padding: 40px 75px;
+  margin: 0 115px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width:768px) {
+  padding: 30px 80px;
+  margin: 0 30px;
+  margin-bottom: 32px;
+}
+@media screen and (max-width:767px) {
+  padding: 35px 40px;
+  margin: 0 20px;
+  margin-bottom: 30px;
+}
 }
 
 
@@ -225,6 +264,7 @@ margin-bottom: 32px;
   justify-content: center;
   align-items: center;
 }
+
 
 
 .swiper-pagination-bullet{
@@ -247,29 +287,6 @@ display: flex;
 justify-content: center;
 align-items: center;
 
-
-  width: 1200px;
-}
-
-.swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  color: #d9d9d9;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.swiper-pagination-bullet-active {
-  background: #84a178;
-}
-
-.cust-rev-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 .cust-rev-list {
@@ -286,7 +303,7 @@ align-items: center;
   gap: 18px;
   color: grey;
   padding-bottom: 200px;
-
+  
 }
 
 
@@ -356,39 +373,8 @@ color: #d9d9d9;
 background-color: #84a178;
 }
 
-
 .swiper-pagination{
   margin-top: 32px;
   margin-bottom: 207px;
   position: relative;
   }
-
-.cust-rev-swipe {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  color: #d9d9d9;
-  background-color: #d9d9d9;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.cust-rev-swipe:hover {
-  color: #d9d9d9;
-  background-color: #84a178;
-}
-
-.cust-rev-swipe:focus {
-  color: #d9d9d9;
-  background-color: #84a178;
-}
-
-.swiper-pagination {
-  margin-top: 32px;
-  margin-bottom: 207px;
-  position: relative;
-}
-

@@ -4,6 +4,9 @@
   @include tablet {
     max-width: 568px;
     height: 449px;
+    @media screen and (max-height: 669px) {
+      top: 7%;
+    }
   }
 }
 

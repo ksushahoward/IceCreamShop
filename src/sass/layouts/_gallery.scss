@@ -1,17 +1,3 @@
-.gallery {
-  width: 280px;
-  height: auto;
-  margin: 0;
-  @include mobile {
-    width: 440px;
-  }
-  @include tablet {
-    width: 704px;
-  }
-  @include desktop {
-    width: 1013px;
-  }
-}
 .gallery__thumb {
   position: relative;
   width: 280px;
@@ -23,87 +9,74 @@
   }
   @include tablet {
     width: 704px;
-    top: -50px;
+  }
+
+  @include desktop {
+    width: 1013px;
+  }
+}
+.gallery__slider {
+  position: absolute;
+  top: -24px;
+  background-color: #ffffff;
+  width: 280px;
+  height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  overflow: auto;
+  overflow-y: hidden;
+  border: none;
+  @include mobile {
+    width: 440px;
+    height: 180px;
+    top: -26px;
+  }
+  @include tablet {
+    width: 704px;
+    height: 327px;
+    top: -164px;
     border-radius: 18px;
   }
 
   @include desktop {
     width: 1013px;
-    top: -92px;
+    height: 422px;
+    top: -94px;
     border-radius: 24px;
   }
 }
-
-.gallery-thumb__picture {
+.gallery__list {
   position: relative;
-}
-.secondary-image-list {
-  position: absolute;
-}
-.secondary-image__item {
-  position: absolute;
-  top: 0;
-  left: 0;
-  & img {
-    width: 280px;
-    object-fit: cover;
-    animation-name: rotate;
-    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  & .gallery__picture img {
+    position: absolute;
+    animation-name: opacity;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-    animation-duration: 20s;
-    animation-direction: normal;
-    @include mobile {
-      width: 440px;
-    }
-    @include tablet {
-      width: 704px;
-    }
-    @include desktop {
-      width: 1013px;
-    }
+    animation-duration: 15s;
+    animation-direction: alternate;
   }
 }
-.gallery-thumb__picture > img {
-  animation-delay: 15s;
-}
-.secondary-image__item:nth-child(1) img {
+.gallery__list .gallery__picture img:nth-of-type(1) {
   animation-delay: 10s;
 }
-
-.secondary-image__item:nth-child(2) img {
+.gallery__list .gallery__picture img:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.gallery__list .gallery__picture img:nth-of-type(3) {
   animation-delay: 0s;
 }
-@keyframes gallery {
+@keyframes opacity {
   0% {
     opacity: 1;
   }
-  25% {
+  45% {
     opacity: 1;
   }
-  33% {
+  55% {
     opacity: 0;
   }
-  92% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes rotate {
-  0% {
-    opacity: 1;
-    transform: rotate(0) scale(1);
-  }
-  50% {
-    transform: rotate(0) scale(1);
-    opacity: 1;
-  }
-  59.99999% {
-    transform: rotate(45deg) scale(3);
-    opacity: 0;
-  }
-  60% {
+  5% {
     opacity: 0;
   }
   100% {

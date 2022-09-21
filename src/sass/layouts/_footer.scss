@@ -1,44 +1,42 @@
 .footer {
-    background-color: var(--bgc-dark-olive);
-    padding-top: 38px;
-    padding-bottom: 62px; @include tablet{  padding-top: 40px;
-        padding-bottom: 13px;}
+  background-color: var(--bgc-dark-olive);
+  padding-top: 38px;
+  padding-bottom: 62px;
+  @include tablet {
+    padding-top: 40px;
+    padding-bottom: 13px;
+  }
 }
 
 .footer-card-set {
-    display: block;
+  display: block;
 
-    @include tablet {
-        display: flex;
-        justify-content: space-between;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
 
-
-    }
-}
-
-.tagline__item {
+  .tagline__item {
     margin-left: 22px;
     margin-bottom: 16px;
 
     &:last-child {
-        margin-left: 20px;
-        margin-bottom: 42px;
+      margin-left: 20px;
+      margin-bottom: 42px;
     }
 
     @include tablet {
+      margin-left: 33px;
+      margin-bottom: 9px;
+
+      &:last-child {
         margin-left: 33px;
-        margin-bottom: 9px;
-
-        &:last-child {
-            margin-left: 33px;
-            margin-bottom: 32px;
-        }
-
-
+        margin-bottom: 32px;
+      }
     }
-}
+  }
 
-.tagline__text {
+  .tagline__text {
     display: block;
     color: var(--title-color-light);
     font-size: 18px;
@@ -48,63 +46,59 @@
     width: 232px;
 
     @include tablet {
-        width: 341px;
-        font-size: 26px;
-        line-height: calc(32 / 26);
-        letter-spacing: 0.04em;
+      width: 341px;
+      font-size: 26px;
+      line-height: calc(32 / 26);
+      letter-spacing: 0.04em;
     }
+  }
 
-}
-
-.tagline__text--akcent {
+  .tagline__text--akcent {
     font-size: 34px;
     line-height: calc(41 / 34);
     letter-spacing: 0.04em;
 
     @include tablet {
-        font-size: 48px;
-        letter-spacing: calc(59 / 48);
-        letter-spacing: 0.06em;
+      font-size: 48px;
+      letter-spacing: calc(59 / 48);
+      letter-spacing: 0.06em;
     }
-}
+  }
 
-.social {
+  .social {
     display: block;
     margin-right: 20px;
 
     @include tablet {
-        margin-right: 32px;
+      margin-right: 32px;
 
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
     }
-}
+  }
 
-.social__list {
+  .social__list {
     display: flex;
     gap: 27px;
     justify-content: flex-end;
     margin-bottom: 38px;
 
     @include tablet {
-        gap: 30px;
-        margin-bottom: 32px;
+      gap: 30px;
+      margin-bottom: 32px;
     }
-}
+  }
 
-.social__item {
-
+  .social__item {
     display: flex;
     width: 34px;
     height: 34px;
     justify-content: center;
     align-items: center;
+  }
 
-
-}
-
-.social__link {
+  .social__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,63 +108,68 @@
     border-radius: 50%;
 
     &:hover {
-        width: 32px;
-        height: 32px;
+      width: 32px;
+      height: 32px;
     }
 
     &:hover .social__icon,
     &:focus .social__icon {
-        fill: var(--text-color-light);
+      fill: var(--text-color-light);
     }
+  }
 
-}
-
-.social__icon {
+  .social__icon {
     fill: var(--bgc-dark-olive);
-}
+  }
 
-.footer-contakt__list {
+  .footer-contakt__list {
     display: flex;
     justify-content: flex-end;
     gap: 5px;
     margin-bottom: 40px;
 
     @include tablet {
-        margin-bottom: 56px;
+      margin-bottom: 56px;
     }
-}
+  }
 
-.footer-contakt__text {
+  .footer-contakt__text {
     font-size: 12px;
     line-height: 186%;
     color: var(--text-color-dark);
     font-weight: 700;
 
     @include tablet {
-        font-size: 14px;
-        line-height: 186%;
+      font-size: 14px;
+      line-height: 186%;
     }
-}
+  }
 
-.footer-contakt__link {
+  .footer-contakt__link {
     color: var(--text-color-light);
-}
+  }
 
-.footer__border { 
+  .footer__border {
     margin-bottom: 16px;
-    border-bottom: 1px solid #E1E1E1;
-    @include tablet{ margin-bottom: 14px;}
-}
+    border-bottom: 1px solid #e1e1e1;
+    @include tablet {
+      margin-bottom: 14px;
+    }
+  }
 
-.copyright {
+  .copyright {
     font-weight: 700;
     font-size: 14px;
     line-height: 152%;
     text-align: center;
-    color: #7A7A7A;
+    color: #7a7a7a;
     width: 137px;
     margin: auto;
-    @include tablet{ font-size: 14px;line-height: 186%; width: 100%; 
-        letter-spacing: 0.02em;
+    @include tablet {
+      font-size: 14px;
+      line-height: 186%;
+      width: 100%;
+      letter-spacing: 0.02em;
     }
+  }
 }

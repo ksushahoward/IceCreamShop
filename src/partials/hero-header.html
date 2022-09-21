@@ -1,7 +1,7 @@
 
 <header class="header">
   <section class="container header__container">
-    <a class="logo" href="./index.html">
+    <a class="logo  animate__animated animate__pulse" href="./index.html">
       <picture>
         <source
           srcset="
@@ -62,12 +62,13 @@
           <use href="./images/icons.svg#icon-Burger"></use>
         </svg>
       </button>
-       <button data-buy-now-modal class="header-button button" type="button">
+       <button data-buy-now-modal-open class="header-button button" type="button">
       Buy now
       <svg class="header-button__arrow" width="12" height="12">
         <use href="../src/images/icons.svg#icon-arow"></use>
       </svg>
     </button>
+    
     </div>
 
    
@@ -78,7 +79,7 @@
   <div class="container hero__container">
     <div class="hero-box">
       <div class="hero-box-left-part">
-        <h1 class="hero__title">
+        <h1 class="hero__title animate__animated animate__rubberBand">
           ice cream made with
           <span class="hero__title--big-word">passion</span>
         </h1>
@@ -111,27 +112,12 @@
       </p>
 
       <a href="" class="arrow-link link">
-        <svg
-          class="arrow-link__icon arrow-link__icon--default"
-          width="40"
-          height="16"
-        >
-          <use href="./images/icons.svg#icon-arrow-default"></use>
-        </svg>
-        <svg
-          class="arrow-link__icon arrow-link__icon--hover"
-          width="50"
-          height="16"
-        >
-          <use href="./images/icons.svg#icon-arrow-hover"></use>
-        </svg>
-        <svg
-          class="arrow-link__icon arrow-link__icon--focus"
-          width="50"
-          height="23"
-        >
-          <use href="./images/icons.svg#icon-arrow-focus"></use>
-        </svg>
+        <svg id="right">
+						<path
+							d="M40.707 8.707a1 1 0 0 0 0-1.414L34.343.929a1 1 0 1 0-1.414 1.414L38.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h40V7H0v2Z"
+							fill="#FCFCFC"
+						/></svg
+				>
       </a>
     </div>
 
@@ -194,6 +180,9 @@
       />
     </picture>
   </div>
+
+  
+
 </section>
 
 
@@ -268,7 +257,7 @@
   </ul>
 
   <button
-    data-buy-now-modal
+    data-buy-now-modal-open
     class="header-button menu-container__header-button button"
     type="button"
   >

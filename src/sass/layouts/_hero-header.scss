@@ -373,35 +373,37 @@ html {
     width: 225px;
     height: 225px;
   }
+
+  animation-name: rotation;
+  animation-duration: 90s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.arrow-link__icon {
-  fill: #fcfcfc;
-}
-
-.arrow-link__icon--hover,
-.arrow-link__icon--focus {
-  display: none;
-}
-
-.arrow-link:hover {
-  .arrow-link__icon--default {
-    display: none;
-  }
-  .arrow-link__icon--hover {
-    display: inline-block;
+svg#right {
+  height: 22px;
+  width: 60px;
+  path {
+    transition: 250ms all ease;
+    height: 100%;
   }
 }
 
-.arrow-link:focus {
-  .arrow-link__icon--default,
-  .arrow-link__icon--hover {
-    display: none;
-  }
+.arrow-link {
+  z-index: 2;
+  width: 50px;
+}
 
-  .arrow-link__icon--focus {
-    display: inline-block;
-  }
+.arrow-link:hover svg#right path {
+  d: path(
+    'M50.707 8.707a1 1 0 0 0 0-1.414L44.343.929a1 1 0 1 0-1.414 1.414L48.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h50V7H0v2Z'
+  );
+}
+
+.arrow-link:focus svg#right path {
+  d: path(
+    'M51.06 13.06a1.5 1.5 0 0 0 0-2.12l-9.545-9.547a1.5 1.5 0 1 0-2.122 2.122L47.88 12l-8.486 8.485a1.5 1.5 0 1 0 2.122 2.122l9.546-9.546ZM0 13.5h50v-3H0v3Z'
+  );
 }
 
 .hero-second-image {
@@ -685,5 +687,14 @@ html {
   &:focus {
     color: #fcfcfc;
     background-color: #0a8817;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
   }
 }

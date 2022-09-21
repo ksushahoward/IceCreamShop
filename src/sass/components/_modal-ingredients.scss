@@ -1,4 +1,7 @@
-// Ingredients modal
+.ingredients .modal {
+  top: 0;
+  transform: translate(-50%);
+}
 
 .ingredients__picture {
   z-index: 1;

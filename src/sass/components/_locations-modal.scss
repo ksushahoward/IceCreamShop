@@ -1,4 +1,8 @@
 .locations-modal {
   min-width: 280px;
   min-height: 365px;
+
+  @media screen and (max-height: 669px) {
+    top: 7%;
+  }
 }

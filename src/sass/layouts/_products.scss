@@ -1,190 +1,193 @@
 .products {
-    padding-top: 60px;
-    padding-bottom:60px;
-    display: block;
-    text-align: center;
-    background-image: url(../images/ice-cream-back.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    @include tablet {
-        padding-bottom: 82px;
-    }
-    
-    @include desktop {
-        padding-bottom: 60px;
-    }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: block;
+  text-align: center;
+  background-image: url(../images/ice-cream-back.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @include tablet {
+    padding-bottom: 82px;
+  }
+
+  @include desktop {
+    padding-bottom: 60px;
+  }
 }
 
 .products__container {
-    padding-left: 20px;
-    padding-right: 20px;
-    @include tablet {
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-    
-    @include desktop {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
+  padding-left: 20px;
+  padding-right: 20px;
+  @include tablet {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .products__paragraph {
-    font-family: 'Montserrat';
-    @include font (800, 18px, 1.22, none);
-    @include tablet {
-        font-size: 22px;
-    }
-    @include desktop {
-        font-size: 30px;
-        line-height: 1.23;
-    }
-    justify-content: center;
-    text-transform: uppercase;
-    margin-bottom: 12px;
+  font-family: 'Montserrat';
+  @include font(800, 18px, 1.22, none);
+  @include tablet {
+    font-size: 22px;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
 .products__title {
-    font-family: 'Seymour One';
-    @include font(400, 30px, 1.26, 0.04em);
-    @include tablet {
-        font-size: 34px;
-        margin-bottom: 80px;
-    }
-    @include desktop {
-        font-size: 36px;
-        line-height: 1.25;
-        margin-bottom: 120px;
-    }
-    justify-content: center;
-    text-transform: uppercase;
-    margin-bottom: 40;
-    color: #131313;
+  font-family: 'Seymour One';
+  @include font(400, 30px, 1.26, 0.04em);
+  @include tablet {
+    font-size: 34px;
+    margin-bottom: 80px;
+  }
+  @include desktop {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 120px;
+  }
+  justify-content: center;
+  text-transform: uppercase;
+  margin-bottom: 40;
+  color: #131313;
 }
 
 .products-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction:column;
-    flex-wrap: wrap;
-    gap: 56px;
-    @include tablet {
-        flex-wrap: nowrap;
-        flex-direction: row;
-        gap:16px;
-    }
-    @include desktop {
-        gap:32px;
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 56px;
+  @include tablet {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 16px;
+  }
+  @include desktop {
+    gap: 32px;
+  }
 }
 
 .products-list__item {
-    @media screen and (min-width: 768px) {
-        width: calc((100% - 32px)/3);
-    }
-    
-    @media screen and (min-width: 1200px) {
-        width: calc((100% - 64px)/3);
-    }
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 64px) / 3);
+  }
 }
 
 .products-list__thumb {
-    display: flex;
-    justify-content: center;
-    border-radius: 50%;
-    background-color: rgba(248, 210, 78, 0.7);
-    position:relative;
-    z-index:0;
-    width: 200px;
-    height: 200px;
-    @include tablet {
-        width: 198px;
-        height: 196px;
-    }
-    @include desktop {
-        width: 300px;
-        height: 300px;
-    }
+  display: flex;
+  justify-content: center;
 }
 .products-list__box {
-    max-width: 280px;
-    border-radius: 24px;
-    height: 420px;
-    padding: 123px 40px 20px 40px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    @include tablet {
-        max-width: 224px;
-        padding: 107px 26px 20px 26px;
-        height: 428px;
-    }
-    @include desktop {
-        max-width: 370px;
-        height: 535px;
-        padding: 166px 62px 60px 61px;
-        box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-    }
+  max-width: 280px;
+  border-radius: 24px;
+  height: 420px;
+  padding: 123px 40px 20px 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  @include tablet {
+    max-width: 224px;
+    padding: 107px 26px 20px 26px;
+    height: 428px;
+  }
+  @include desktop {
+    max-width: 370px;
+    height: 535px;
+    padding: 166px 62px 60px 61px;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  }
 }
 .products-list__box--color-green {
-  background-color: #AEC6A5;
+  background-color: #aec6a5;
 }
 
 .products-list__box--color-yellow {
-    background-color: #EFD478;
+  background-color: #efd478;
 }
 
 .products-list__box--color-brown {
-    background-color: #D6936D;
+  background-color: #d6936d;
 }
 
 .products-list__title {
-    font-family: 'Montserrat';
-    @include font(700, 20px, 1.2, 0.04em);
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: #131313;
-    @include tablet {
-       font-size: 22px;
-       letter-spacing: 1.22;
-    }
-    @include desktop {
-        font-size: 30px;
-        line-height: 1.23;
-        margin-bottom: 65px;
-    }
+  font-family: 'Montserrat';
+  @include font(700, 20px, 1.2, 0.04em);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #131313;
+  @include tablet {
+    font-size: 22px;
+    letter-spacing: 1.22;
+  }
+  @include desktop {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 65px;
+  }
 }
 
 .products-list__text {
-    font-family: 'Montserrat';
-    @include font(400, 14px, 1.76, 0.04em);
-    @include desktop {
-        font-size: 16px;
-
-    }
-    color: #131313;
+  font-family: 'Montserrat';
+  @include font(400, 14px, 1.76, 0.04em);
+  @include desktop {
+    font-size: 16px;
+  }
+  color: #131313;
 }
 
 .products-list__photo {
-    border-radius:50%;
-    position:absolute;
-    z-index:1;
-    margin-bottom: -45%;
-    @media desktop {
-        margin-bottom: -35%;
-    }
+  border-radius: 50%;
+  //   position: absolute;
+  //   z-index: 1;
+  margin-bottom: -45%;
+  @media desktop {
+    margin-bottom: -35%;
+  }
 }
 
 .products-button {
-    background-color: transperent;
-    border: none;
-    width: 130px;
-    height: 22px;
-    padding: 5px 1px;
-    margin-bottom:20px;
-    @include desktop {
-     margin-bottom: 60px;
-    }
-    
+  background: transparent;
+  border: none;
+  width: 130px;
+  height: 22px;
+  padding: 5px 1px;
+  margin-bottom: 20px;
+  @include desktop {
+    margin-bottom: 60px;
+  }
+}
+.circle {
+  z-index: 1;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(248, 210, 78, 0.7);
+  border-radius: 50%;
+  justify-content: center;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  @include tablet {
+    width: 198px;
+    height: 196px;
+  }
+
+  @include desktop {
+    width: 300px;
+    height: 300px;
+  }
 }

@@ -108,7 +108,7 @@
     }
     @include desktop {
         max-width: 370px;
-        height:718px;
+        height: 535px;
         padding: 166px 62px 60px 61px;
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     }
@@ -164,3 +164,10 @@
     }
 }
 
+.products-button {
+    background: #FFFFFF;
+    border-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

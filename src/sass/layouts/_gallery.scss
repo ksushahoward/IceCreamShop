@@ -71,29 +71,6 @@ opacity:0;
 opacity:0;
 }
 }
-
-/*
-.gallery__thumb .gallery-thumb__picture > img {position:absolute;
-  top: 0;
-  left: 0;
-  width: 280px; 
-  object-fit: cover;
-  animation-name: rotate;
-  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-  animation-iteration-count: infinite;
-  animation-duration: 20s;
-  animation-direction: normal;
-  @include mobile {width: 440px;}
-  @include tablet {width: 704px;}
-  @include desktop {width: 1013px;}}
-
-.gallery-thumb__item .gallery-thumb__picture > imggallery-section:nth-child(1) {
-  animation-delay: 20s;}
-.gallery-thumb__item .gallery-thumb__picture > imggallery-section:nth-child(2) {
-  animation-delay: 15s;}
-.gallery-thumb__item .gallery-thumb__picture > imggallery-section:nth-child(3) {
-  animation-delay: 5s;}    */
-  
 @keyframes rotate {
   0% {
       opacity: 1;
@@ -113,24 +90,4 @@ opacity:0;
   100% {
       opacity: 1;
   }  
-}
-
-@keyframes coolanime {
-  0% {
-    opacity: 0;
-    animation-timing-function: ease-in;
-  }
-  8% {
-    opacity: 1;
-    animation-timing-function: ease-out;
-  }
-  17% {
-    opacity: 1
-  }
-  25% {
-    opacity: 0
-  }
-  100% {
-    opacity: 0
-  }
 }

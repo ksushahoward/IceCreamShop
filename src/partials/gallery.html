@@ -1,98 +1,68 @@
 <section>
   <div class="gallery__thumb">
-    <div class="gallery__slider">
-        <ul class="gallery__list list">
-          <li class="gallery__item">
-            <picture class="gallery__picture">
-              <source
-                srcset="
-                  ./images/gallery/main-gallery-desktop.jpg    1x,
-                  ./images/gallery/main-gallery-desktop-2x.jpg 2x
-                "
-                media="(min-width:1200px)"
-              />
-              <source
-                srcset="
-                  ./images/gallery/main-gallery-tablet.jpg    1x,
-                  ./images/gallery/main-gallery-tablet-2x.jpg 2x
-                "
-                media="(min-width:768px)"
-              />
-              <source
-                srcset="
-                  ./images/gallery/main-gallery-mobile.jpg    1x,
-                  ./images/gallery/main-gallery-mobile-2x.jpg 2x
-                "
-                media="(max-width:767px)"
-              />
-              <img
-                src="./images/gallery/main-gallery-desktop.jpg"
-                alt="Main Gallery Icecream"
-                class="gallery__image"
-                width="1013"
-              />
-          </li>
-          <li class="gallery__item">
-            <picture class="gallery__picture">
-              <source
-                srcset="
-                  ./images/gallery/gallery-item1-desktop.jpg    1x,
-                  ./images/gallery/gallery-item1-desktop-2x.jpg 2x
-                "
-                media="(min-width:1200px)"/>
-              <source
-                srcset="
-                  ./images/gallery/gallery-item1-desktop.jpg    1x,
-                  ./images/gallery/gallery-item1-desktop-2x.jpg 2x
-                "
-                media="(min-width:768px)"
-              />
-              <source
-                srcset="
-                  ./images/gallery/gallery-item1-desktop.jpg    1x,
-                  ./images/gallery/gallery-item1-desktop-2x.jpg 2x
-                "
-                media="(max-width:767px)"
-              />
-              <img
-                src="./images/gallery/gallery-item1-desktop.jpg"
-                alt="Second Gallery IceCream"
-                width="1013"
-                class="gallery__image"
-              />
-            </picture>
-          </li>
-          <li class="gallery__item">
-            <picture class="gallery__picture">
-              <source
-                srcset="
-                  ./images/gallery/gallery-item2-desktop.jpg    1x,
-                  ./images/gallery/gallery-item2-desktop-2x.jpg 2x
-                "
-                media="(min-width:1200px)"/>
-              <source
-                srcset="
-                  ./images/gallery/gallery-item2-desktop.jpg    1x,
-                  ./images/gallery/gallery-item2-desktop-2x.jpg 2x
-                "
-                media="(min-width:768px)"
-              />
-              <source
-                srcset="
-                  ./images/gallery/gallery-item2-desktop.jpg    1x,
-                  ./images/gallery/gallery-item2-desktop-2x.jpg 2x
-                "
-                media="(max-width:767px)"
-              />
-              <img
-                src="./images/gallery/gallery-item2-desktop.jpg"
-                alt="Second Gallery IceCream"
-                width="1013"
-                class="gallery__image"
-              />
-            </picture>
-          </li>
-        </ul>
+    <div class="gallery__swap">
+      <div class="gallery__photo-1">
+        <picture class="gallery__picture">
+          <source
+            srcset="
+              ./images/gallery/gallery-item2-desktop.jpg    1x,
+              ./images/gallery/gallery-item2-desktop-2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/gallery-item2-desktop.jpg    1x,
+              ./images/gallery/gallery-item2-desktop-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/gallery-item2-desktop.jpg    1x,
+              ./images/gallery/gallery-item2-desktop-2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            src="./images/gallery/gallery-item1-desktop.jpg"
+            alt="Second Gallery IceCream"
+            width="1013"
+            class="gallery__image"
+          />
+        </picture>
+      </div>
+      <div class="gallery__photo-2">
+        <picture class="gallery__picture">
+          <source
+            srcset="
+              ./images/gallery/main-gallery-desktop.jpg    1x,
+              ./images/gallery/main-gallery-desktop-2x.jpg 2x
+            "
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/main-gallery-tablet.jpg    1x,
+              ./images/gallery/main-gallery-tablet-2x.jpg 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/gallery/main-gallery-mobile.jpg    1x,
+              ./images/gallery/main-gallery-mobile-2x.jpg 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            src="./images/gallery/main-gallery-desktop.jpg"
+            alt="Main Gallery Icecream"
+            class="gallery__image"
+            width="1013"
+          />
+        </picture>
+      </div>
     </div>
   </div>
 </section>

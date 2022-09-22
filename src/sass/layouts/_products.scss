@@ -95,6 +95,7 @@
   justify-content: center;
 }
 .products-list__box {
+  position: relative;
   max-width: 280px;
   border-radius: 24px;
   height: 420px;
@@ -152,8 +153,8 @@
 
 .products-list__photo {
   border-radius: 50%;
-  //   position: absolute;
-  //   z-index: 1;
+  position: relative;
+  z-index: 100;
   margin-bottom: -45%;
   @media desktop {
     margin-bottom: -35%;
@@ -161,14 +162,25 @@
 }
 
 .products-button {
+  display: block;
+  position: absolute;
+  bottom: 0;
+
   background: transparent;
   border: none;
   width: 130px;
   height: 22px;
   padding: 5px 1px;
   margin-bottom: 20px;
+  margin-left: 35px;
+
+  @include tablet {
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
   @include desktop {
     margin-bottom: 60px;
+    margin-left: 58px;
   }
 }
 .circle {

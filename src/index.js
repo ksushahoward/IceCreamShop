@@ -7,4 +7,3 @@ import './js/swiper';
 import './js/slider';
 // import './js/modal-1';
 import './js/modal-ingredients';
-
